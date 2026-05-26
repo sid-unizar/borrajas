@@ -1,7 +1,23 @@
 [project]
 name = "borrajas"
 version = "0.1.0"
-description = ""
+description = "Hybrid RDF+RAG question-answering system for extreme weather events"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "rdflib>=7.6.0",
+]
+
+[project.optional-dependencies]
+langgraph = [
+    "langchain-ollama>=1.1.0",
+    "langgraph>=1.2.1",
+]
+ui = [
+    "chainlit>=2.11.1",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.3",
+]
