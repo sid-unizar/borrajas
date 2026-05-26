@@ -1,5 +1,11 @@
 # Borrajas: A flexible hybrid question-answering system for extreme weather events.
 
+## Overview
+
+Borrajas is a prototype of a question-answering system that can answer questions about extreme weather events
+developed within the CLASiK project.
+It uses both RAG and RDF sources to answer questions.
+
 ## Installation
 
 The project uses `uv` for development, make sure you [install](https://docs.astral.sh/uv/getting-started/installation/) it first.
@@ -41,8 +47,40 @@ uv sync --extra langgraph --extra ui
 uv sync --all-extras
 ```
 
-### Setting up LLM connection
+### Setting up an LLM connection
 
 At the moment, only Ollama API is supported.
 Make sure you have Ollama [installed](https://ollama.com/download) and running, 
 and you are [signed in](https://docs.ollama.com/cloud#running-cloud-models) to ollama cloud if you are using cloud-based models.
+
+## Usage
+
+There are three ways to run the project:
+- `borrajas-cli`: CLI interface, including batch mode
+- `borrajas-eval`: Run evaluation on a dataset with a custom config and custom prompts
+- `borrajas-ui`: Chatbot with ChainLit UI
+
+### CLI
+
+```bash
+# Basic usage
+borrajas-cli --backend langgraph --ttl data/sinobas-sample.ttl "How many tornadoes have occurred in the last 10 years in Cantabria?"
+
+# Batch mode
+borrajas-cli --backend langgraph --ttl data/sinobas-sample.ttl --questions data/sample-questions.txt
+
+# Using config file
+borrajas-cli --config config.yaml --questions data/sample-questions.txt
+```
+
+### Evaluation
+
+```bash
+borrajas-eval --backend langgraph --config eval/config.yaml
+```
+
+### UI
+
+```bash
+borrajas-ui --backend langgraph --ttl data/sinobas-sample.ttl
+```
