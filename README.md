@@ -53,6 +53,10 @@ At the moment, only Ollama API is supported.
 Make sure you have Ollama [installed](https://ollama.com/download) and running, 
 and you are [signed in](https://docs.ollama.com/cloud#running-cloud-models) to ollama cloud if you are using cloud-based models.
 
+Make a copy of the `.env.example` file and rename it to `.env`, then fill in the required values if needed:
+- OLLAMA_HOST: The host of the Ollama API (usually the default is fine)
+- OLLAMA_MODEL: The model to use (e.g., `gemma4`
+
 ## Usage
 
 There are three ways to run the project:
@@ -67,10 +71,10 @@ There are three ways to run the project:
 borrajas-cli --backend langgraph --ttl data/sinobas-sample.ttl "How many tornadoes have occurred in the last 10 years in Cantabria?"
 
 # Batch mode
-borrajas-cli --backend langgraph --ttl data/sinobas-sample.ttl --questions data/sample-questions.txt
+borrajas-cli --backend langgraph --ttl data/sinobas-sample.ttl -i data/sample-questions.txt
 
 # Using config file
-borrajas-cli --config config.yaml --questions data/sample-questions.txt
+borrajas-cli --config config.yaml -i data/sample-questions.txt
 ```
 
 ### Evaluation
