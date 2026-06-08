@@ -1,0 +1,1962 @@
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix sorelsc: <http://sweetontology.net/relaSci/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix aemet: <http://aemet.linkeddata.es/ontology/> .
+@prefix ssn: <http://purl.oclc.org/NET/ssnx/ssn#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+<http://example:3333/obs_2073> a ssn:Observation;
+time:day "2025-04-27";
+time:hour "09:10";
+geo:long "3.378";
+geo:lat "39.776";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2073>;
+rdfs:comment "Formación de una manga marina (se ve el levantamiento de pequeñas gotas en la superficie del mar), acompañada de una pequeña tuba que se disipa más rápidamente."@es .
+<http://example:3333/jprodriguezg> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Illes Balears"@es .
+<http://example:3333/obs_2073> ssn:observedBy <http://example:3333/jprodriguezg> .
+<http://example:3333/prop_Tornado%20/%20Tromba%20Marina> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_0>,<http://example:3333/impact_c_0>;
+rdfs:label "Tornado / Tromba Marina"@es .
+<http://example:3333/obs_2073> ssn:observedProperty <http://example:3333/prop_Tornado%20/%20Tromba%20Marina>;
+geo:alt "0" .
+<http://example:3333/obs_2075> a ssn:Observation;
+time:day "2025-05-01";
+time:hour "16:00";
+geo:long "-3.893";
+geo:lat "42.999";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2075>;
+rdfs:comment """Situación meteorológica: 
+Borrasca fría aislada situada sobre el oeste peninsular que aporta un flujo marcadamente divergente y ligeramente difluente en niveles medio y altos. 
+En superficie, convergencia de viento, del SE y del SW en el entorno que favorece la elevación de las masas de aire hacia el nivel de condensación por ascenso y posteriormente hacia el NCL. 
+La energía convectiva disponible es limitada a moderada, de entre 1000 a 1500 J/kg. la temperatura en superficie es de 16ºC y se observa un gradiente térmico en el nivel de los 850 hPa en el entorno que puede favorecer la inestabilidad. 
+Respecto a los índices cinemáticos, la cizalladura del viento es intensa en los primeros 0 - 6 kilómetros, alcanzándose, según los análisis los 30 m/s. La cizalladura en el primer kilómetro es más limitada, del orden de los 5 - 10 m/s. 
+La helicidad relativa a la tormenta en los primeros 3 kilómetros es de aproximadamente 250 m2/s2 según el modelo mesoescalar AROME, que coincide de manera aproximada con los consultados por el ECMWF y GFS (200 - 300 m2/s2). 
+El análisis de la hodógrafa indica un flujo inidireccional en los niveles más bajos que se va curvado a derecha conforme se aumenta la altura. Este tipo de hodógrafas suelen ser compatibles con fenómenos de Storm - Splittig y posterior desarrollo supercelular favorable al miembro derecho. 
+
+Análisis radar: hacia las 13:00 UTC empiezan a desarrollarse células convectivas en el entorno de Palencia. A medida que se desplazaban hacia el norte se iban intensificando. Al llegar a la frontera entre Cantabria, Palencia y Burgos parece que se reactivan y tienden a desplazarse ligeramente a la derecha con respecto al viento rector dominante. Incluso, minutos antes parecen desarrollar una sutil división celular. La reflectividad máxima observada no ha superado los 50 dbz. 
+En el momento del fenómeno, la imagen radar muestra que la célula entra en una fase rápida de disipación, que normalmente, es cuando mayor probabilidad de eventos tornádicos se desarrollan. El análisis radar no muestra en ningún momento ninguna estructura típica relacionada con supercélulas. 
+
+Análisis de las imágenes de la webcam de Corconte (gestionada por MeteoCampoo):
+A las 15:20 UTC se observa una estructura convectiva en el área del entorno de Alfoz de Santa Gadea y Bricia (fondo de la imagen). 
+A las 15:25 UTC se aprecia de manera evidente que la estructura presenta una base libre de precipitación que sería la zona de alimentación o de ascenso de la tormenta. Detrás, aparece la corriente descendente de la misma. Es decir, la tormenta presentaba un desacople interno del movimiento del aire en su seno, típico de entornos de alta o moderada cizalladura como es el caso. Sobre las 15:40 UTC la estructura entra en fase clara de colapso y la corriente de aire ascendente es aniquilada por la descendente. A las 15:50 UTC la tormenta descarga en la vertical con una descendente bastante intensa. A las 15:59 UTC la webcam muestra el desarrollo de una estructura alargada, una tuba y un posible tornado. El análisis anterior y posterior al evento permite determinar que, durante la generación de la tuba, en su vertical inferior la imagen muestra un fuerte tono azulado que no aparece en el resto de la imagen en ese momento. Esto puede explicarse de varias formas, que sea un error en la imagen o en la toma del color de la cámara, que debido a la precipitación haya algún punto de saturación de azul mayor en la cámara o bien, que la tuba, bien visible y confirmada, haya podido tomar tierra en ese punto (en este caso agua del embalse del Ebro). 
+El análisis detallado parece indicar que la tuba pudo tocar agua del embalse, pues la anomalía azulada debajo de la tuba una vez desaparece la tuba, también desaparece. 
+Las imágenes de la webcam también han sido analizadas con inteligencia artificial (IA) y su conclusión también indica una alta probabilidad de interacción con el agua del embalse, aunque el evento tornádico no puede confirmarse al 100%. 
+En cualquiera de los casos, el fenómeno no parece estar asociado a un evento supercelular. No se han reconocido estructuras relacionadas con supercélulas ni tampoco se ha evidenciado rotación intensa aparente desde la webcam, aunque sí hay un marcado desacople entre la corriente de aire ascendente y la descendente."""@es .
+<http://example:3333/GorkaHermoso> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Burgos"@es .
+<http://example:3333/obs_2075> ssn:observedBy <http://example:3333/GorkaHermoso> .
+<http://example:3333/prop_Tornado%20/%20Tromba%20Marina> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_1>,<http://example:3333/impact_c_1>;
+rdfs:label "Tornado / Tromba Marina"@es .
+<http://example:3333/obs_2075> ssn:observedProperty <http://example:3333/prop_Tornado%20/%20Tromba%20Marina>;
+geo:alt "834" .
+<http://example:3333/obs_2076> time:day "2025-05-02";
+a ssn:Observation;
+time:hour "09:30";
+geo:long "-4.175";
+geo:lat "39.034";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2076>;
+rdfs:comment "Asociado al paso de una línea de tormentas, posiblemente una línea de turbonada, se produjo una fuerte granizada."@es .
+<http://example:3333/lbanonp> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Ciudad Real"@es .
+<http://example:3333/obs_2076> ssn:observedBy <http://example:3333/lbanonp> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty .
+<http://example:3333/impact_b_2> rdfs:comment "El agua entró en algunos edificios, y el granizo produjo daños y rotura de tejas y ha afectado a la vegetación, especialmente a árboles y plantas ornamentales, que se han visto muy dañadas, así como a algunas zonas de olivar."@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_b_2> .
+<http://example:3333/impact_c_2> rdfs:comment "Ha afectado a la vegetación, especialmente a árboles y plantas ornamentales, que se han visto muy dañadas, así como a algunas zonas de olivar."@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_c_2>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2076> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "586" .
+<http://example:3333/obs_2078> time:day "2025-05-03";
+time:hour "16:40";
+geo:long "0.183";
+geo:lat "40.900";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2078>;
+rdfs:comment "A partir de las 16:40 horas locales varias tormentas cruzan la comarca turolense del Matarraña de SW a NE, dejando cuantiosas precipitaciones en la zona (en Valderrobles se recogieron 37,4 mm en 3 horas). Algunas de estas células convectivas dejaron además de la intensa precipitación, abundante actividad eléctrica y granizo de gran tamaño sobre todo en las localidades de Valderrobres y Cretas."@es .
+<http://example:3333/jsanambrosiob> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Teruel"@es .
+<http://example:3333/obs_2078> a ssn:Observation;
+ssn:observedBy <http://example:3333/jsanambrosiob> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty .
+<http://example:3333/impact_b_3> rdfs:comment "Cuantiosos daños en tejados y en vehículos (carrocerías y lunas)."@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_b_3> .
+<http://example:3333/impact_c_3> rdfs:comment "Numerosos daños en cultivos de cereal de invierno."@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_c_3>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2078> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "569" .
+<http://example:3333/obs_2079> a ssn:Observation;
+time:day "2025-05-02";
+time:hour "09:30";
+geo:long "-4.361";
+geo:lat "38.878";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2079>;
+rdfs:comment "Fuerte granizada. 29 mm caídos en 10 minutos, que produjeron acumulaciones en las calles del pueblo que tuvieron que ser retiradas con máquinas."@es .
+<http://example:3333/vtureganoa> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Ciudad Real"@es .
+<http://example:3333/obs_2079> ssn:observedBy <http://example:3333/vtureganoa> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty .
+<http://example:3333/impact_b_4> rdfs:comment "Sin grandes daños."@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_b_4>,<http://example:3333/impact_c_4>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2079> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "616" .
+<http://example:3333/obs_2080> a ssn:Observation;
+time:day "2025-05-02";
+time:hour "09:30";
+geo:long "-3.845";
+geo:lat "39.166";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2080>;
+rdfs:comment "Fuerte granizada, además de lluvia, que causó daños en cultivos de olivo y vid y produjo acumulaciones en calles, campos y carreteras"@es .
+<http://example:3333/vtureganoa> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Ciudad Real"@es .
+<http://example:3333/obs_2080> ssn:observedBy <http://example:3333/vtureganoa> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_5> .
+<http://example:3333/impact_c_5> rdfs:comment "Daños en viñedos y olivares"@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_c_5>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2080> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "638" .
+<http://example:3333/obs_2081> time:day "2025-05-02";
+a ssn:Observation;
+time:hour "15:30";
+geo:long "-2.468";
+geo:lat "41.037";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2081>;
+rdfs:comment "Al paso de una tormenta se produjo una fuerte granizada que cubrió el suelo, con posibles daños en cultivos y que dificultó la circulación en la localidad y en la A2."@es .
+<http://example:3333/mvalverdeb> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Guadalajara"@es .
+<http://example:3333/obs_2081> ssn:observedBy <http://example:3333/mvalverdeb> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_6>,<http://example:3333/impact_c_6>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2081> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "1199" .
+<http://example:3333/obs_2082> a ssn:Observation;
+time:day "2025-05-02";
+time:hour "15:50";
+geo:long "-1.733";
+geo:lat "38.804";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2082>;
+rdfs:comment "Intensa tormenta, con fuerte granizada y lluvias en el entorno de Pozo Cañada, causando grandes daños en los cultivos de la zona y dificultando la circulación en la A-30 y alrededores."@es .
+<http://example:3333/mvalverdeb> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Albacete"@es .
+<http://example:3333/obs_2082> ssn:observedBy <http://example:3333/mvalverdeb> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_7>,<http://example:3333/impact_c_7>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2082> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "805" .
+<http://example:3333/obs_2083> time:day "2025-05-07";
+a ssn:Observation;
+time:hour "19:15";
+geo:long "-1.859";
+geo:lat "39.287";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2083>;
+rdfs:comment "Asociado a una tormenta con moderado grado de organización, se produjo una granizada que afectó a amplias zonas."@es .
+<http://example:3333/lbanonp> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Cuenca"@es .
+<http://example:3333/obs_2083> ssn:observedBy <http://example:3333/lbanonp> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty .
+<http://example:3333/impact_b_8> rdfs:comment "Aún se desconocen."@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_b_8> .
+<http://example:3333/impact_c_8> rdfs:comment "Muy probablemente, haya afectado a muchos cultivos de la zona"@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_c_8>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2083> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "714" .
+<http://example:3333/obs_2084> time:day "2025-05-08";
+time:hour "15:55";
+a ssn:Observation;
+geo:long "-1.491";
+geo:lat "38.069";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2084>;
+rdfs:comment "Granizada singular"@es .
+<http://example:3333/Lucas> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Murcia"@es .
+<http://example:3333/obs_2084> ssn:observedBy <http://example:3333/Lucas> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty .
+<http://example:3333/impact_b_9> rdfs:comment "Se desconoce"@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_b_9>,<http://example:3333/impact_c_9>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2084> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "374" .
+<http://example:3333/obs_2085> a ssn:Observation;
+time:day "2025-05-11";
+time:hour "19:00";
+geo:long "3.263";
+geo:lat "39.452";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2085>;
+rdfs:comment "Grabación de una tuba donde no se puede confirmar contacto con la superficie."@es .
+<http://example:3333/jprodriguezg> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Illes Balears"@es .
+<http://example:3333/obs_2085> ssn:observedBy <http://example:3333/jprodriguezg> .
+<http://example:3333/prop_Tuba> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_10>,<http://example:3333/impact_c_10>;
+rdfs:label "Tuba"@es .
+<http://example:3333/obs_2085> ssn:observedProperty <http://example:3333/prop_Tuba>;
+geo:alt "35" .
+<http://example:3333/obs_2086> a ssn:Observation;
+time:day "2025-05-12";
+time:hour "14:15";
+geo:long "3.328";
+geo:lat "39.536";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2086>;
+rdfs:comment "Granizada en las proximidades de las Porto Cristo (Manacor). Hay fotografías que documentan diámetros de hasta el de monedas de 2 euros. Se observa tanto granizo con anillos como granizo de hielo claro."@es .
+<http://example:3333/jprodriguezg> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Illes Balears"@es .
+<http://example:3333/obs_2086> ssn:observedBy <http://example:3333/jprodriguezg> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_11>,<http://example:3333/impact_c_11>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2086> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "31" .
+<http://example:3333/obs_2087> a ssn:Observation;
+time:day "2025-05-14";
+time:hour "13:00";
+geo:long "1.505";
+geo:lat "39.119";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2087>;
+rdfs:comment "Manga marina observada en Portinatx (Ibiza)"@es .
+<http://example:3333/jprodriguezg> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Illes Balears"@es .
+<http://example:3333/obs_2087> ssn:observedBy <http://example:3333/jprodriguezg> .
+<http://example:3333/prop_Tornado%20/%20Tromba%20Marina> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_12>,<http://example:3333/impact_c_12>;
+rdfs:label "Tornado / Tromba Marina"@es .
+<http://example:3333/obs_2087> ssn:observedProperty <http://example:3333/prop_Tornado%20/%20Tromba%20Marina>;
+geo:alt "0" .
+<http://example:3333/obs_2088> a ssn:Observation;
+time:day "2025-05-02";
+time:hour "15:00";
+geo:long "-4.982";
+geo:lat "39.882";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2088>;
+rdfs:comment "Asociado a una Cb, un tornado atravesó la localidad de sur a norte."@es .
+<http://example:3333/lbanonp> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Toledo"@es .
+<http://example:3333/obs_2088> ssn:observedBy <http://example:3333/lbanonp> .
+<http://example:3333/prop_Tornado%20/%20Tromba%20Marina> a aemet:AmbientProperty .
+<http://example:3333/impact_b_13> rdfs:comment "Muros tumbados, antenas rotas, un AA con una chapa incrustada, chapas de una vaquería levantadas, tejas levantadas e impactadas con un coche al que rompieron alguna luna. etc."@es .
+<http://example:3333/prop_Tornado%20/%20Tromba%20Marina> sorelsc:hasImpact <http://example:3333/impact_b_13> .
+<http://example:3333/impact_c_13> rdfs:comment "Unos 8 árboles tumbados, y otros tantos tronchados."@es .
+<http://example:3333/prop_Tornado%20/%20Tromba%20Marina> sorelsc:hasImpact <http://example:3333/impact_c_13>;
+rdfs:label "Tornado / Tromba Marina"@es .
+<http://example:3333/obs_2088> ssn:observedProperty <http://example:3333/prop_Tornado%20/%20Tromba%20Marina>;
+geo:alt "389" .
+<http://example:3333/obs_2089> time:day "2025-05-18";
+a ssn:Observation;
+time:hour "19:30";
+geo:long "-5.552";
+geo:lat "43.335";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2089>;
+rdfs:comment "Tormenta electrica de alta intensidad con varias ramificaciones"@es .
+<http://example:3333/Raquelbimenes1> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Asturias"@es .
+<http://example:3333/obs_2089> ssn:observedBy <http://example:3333/Raquelbimenes1> .
+<http://example:3333/prop_Reventón%20/%20Frente%20de%20racha> a aemet:AmbientProperty .
+<http://example:3333/impact_b_14> rdfs:comment "Instalaciones electricas privadas, electrodomésticos, alumbrado público municipal"@es .
+<http://example:3333/prop_Reventón%20/%20Frente%20de%20racha> sorelsc:hasImpact <http://example:3333/impact_b_14>,<http://example:3333/impact_c_14>;
+rdfs:label "Reventón / Frente de racha"@es .
+<http://example:3333/obs_2089> ssn:observedProperty <http://example:3333/prop_Reventón%20/%20Frente%20de%20racha>;
+geo:alt "455" .
+<http://example:3333/obs_2090> time:day "2025-05-08";
+time:hour "16:45";
+a ssn:Observation;
+geo:long "-0.825";
+geo:lat "39.731";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2090>;
+rdfs:comment "Tormenta probablemente supercelular que se desplazaba de oeste a este por la comarca de la Serranía y que en la zona de Villar del Arzobispo dejó una importante granizada. En ese momento la tormenta comenzó a propagarse de forma anómala, desviándose de manera significativa hacia el sureste respecto al movimiento del resto de las tormentas de su entorno. La anómala naturaleza de la propagación de esta tormenta era un claro indicio de severidad y de la probable existencia de una tormenta de tipo supercélula ciclónica, que tienden a desviarse hacia la derecha del viento medio, a veces de manera muy significativa."@es .
+<http://example:3333/jnunez> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Valencia"@es .
+<http://example:3333/obs_2090> ssn:observedBy <http://example:3333/jnunez> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_15>,<http://example:3333/impact_c_15>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2090> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "521" .
+<http://example:3333/obs_2091> time:day "2025-05-08";
+a ssn:Observation;
+time:hour "15:50";
+geo:long "-0.549";
+geo:lat "38.914";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2091>;
+rdfs:comment "Tormenta en l'Olleria. Había aviso naranja por tormentas de intensidad fuerte. La tormenta se produjo en el interior y desplazándose hacia el mar la máxima intensidad se produjo en esta localidad."@es .
+<http://example:3333/jnunez> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Valencia"@es .
+<http://example:3333/obs_2091> ssn:observedBy <http://example:3333/jnunez> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_16>,<http://example:3333/impact_c_16>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2091> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "262" .
+<http://example:3333/obs_2092> time:day "2025-05-14";
+a ssn:Observation;
+time:hour "09:45";
+geo:long "-0.093";
+geo:lat "38.937";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2092>;
+rdfs:comment "Se han avistado varias trombas en el mar frente a la costa de la Safor que tuvieron su ciclo de vida en el mar, donde se formaron y se disiparon. Estas trombas se formaron por estiramiento vertical convectivo de vórtices preexistentes en capas bajas debido a zonas fronteras o discontinuidades en superficie que en este caso estuvo generada por convergencia de brisas de tierra y levante en el mar."@es .
+<http://example:3333/jnunez> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Valencia"@es .
+<http://example:3333/obs_2092> ssn:observedBy <http://example:3333/jnunez> .
+<http://example:3333/prop_Tornado%20/%20Tromba%20Marina> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_17>,<http://example:3333/impact_c_17>;
+rdfs:label "Tornado / Tromba Marina"@es .
+<http://example:3333/obs_2092> ssn:observedProperty <http://example:3333/prop_Tornado%20/%20Tromba%20Marina>;
+geo:alt "0" .
+<http://example:3333/obs_2093> a ssn:Observation;
+time:day "2025-05-05";
+time:hour "15:25";
+geo:long "-3.801";
+geo:lat "43.492";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2093>;
+rdfs:comment "Descripción del fenómeno en twiter"@es .
+<http://example:3333/JuanIgnacio> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Cantabria"@es .
+<http://example:3333/obs_2093> ssn:observedBy <http://example:3333/JuanIgnacio> .
+<http://example:3333/prop_Tornado%20/%20Tromba%20Marina> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_18>,<http://example:3333/impact_c_18>;
+rdfs:label "Tornado / Tromba Marina"@es .
+<http://example:3333/obs_2093> ssn:observedProperty <http://example:3333/prop_Tornado%20/%20Tromba%20Marina>;
+geo:alt "26" .
+<http://example:3333/obs_2097> a ssn:Observation;
+time:day "2025-05-13";
+time:hour "16:00";
+geo:long "-5.112";
+geo:lat "40.714";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2097>;
+rdfs:comment "situación inestable con chubascos acompañados de tormenta y granizo menudo"@es .
+<http://example:3333/jgordalizab> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Ávila"@es .
+<http://example:3333/obs_2097> ssn:observedBy <http://example:3333/jgordalizab> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_19>,<http://example:3333/impact_c_19>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2097> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "1165" .
+<http://example:3333/obs_2098> a ssn:Observation;
+time:day "2025-05-14";
+time:hour "13:00";
+geo:long "-4.845";
+geo:lat "40.862";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2098>;
+rdfs:comment "situación inestable con chubascos acompañados de tormenta y probable granizo menudo"@es .
+<http://example:3333/jgordalizab> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Ávila"@es .
+<http://example:3333/obs_2098> ssn:observedBy <http://example:3333/jgordalizab> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_20>,<http://example:3333/impact_c_20>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2098> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "891" .
+<http://example:3333/obs_2099> a ssn:Observation;
+time:day "2025-05-31";
+time:hour "23:15";
+geo:long "-2.053";
+geo:lat "43.189";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2099>;
+rdfs:comment "Sobre las 20:00 se forma una tormenta en el este de Cantabria que va avanzando lentamente hacia Bizkaia donde afecta principalmente a la mitad norte, sobre las 22:50 - 23:00 , la tormenta se va deshaciendo por su parte delantera que ya afectaba a la zona costera de Gipuzkoa desde Zumaia hasta San Sebastián, esa tormenta se separa de su parte sur y va moviéndose en una dirección diferente a la de la tormenta anterior y va adquiriendo intensidades muy altas. En el radar va adquiriendo también características supercelulares , esa tormenta deja en la estación de Altzola 19,6l/M2 en tan solo 10 minutos lo que entra en el rango de intensidad torrencial y por supuesto, acompañada de granizo. La tormenta afecta a la zona de Villabona con características supercelulares como la forma en el radar, la alta actividad eléctrica, altas reflectividad es en el radar y topes altos de hasta 14km, concretamente el radar de AEMET muestra echotops de entre 12-14 km localmente algo superiores. En Villabona se registran granizos de hasta 3cm, abundante y constante actividad eléctrica y lluvias torrenciales que duran un par de minutos que dejan hasta 10l/M2 en tan solo 10 minutos, lo más destacable de este fenómeno es el tamaño del granizo ya que fue de tamaño mediano ( 3 cm ), típico de una tormenta con características supercelulares o simplemente una tormenta con topes muy altos."@es .
+<http://example:3333/oierseoanerubio> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Gipuzkoa"@es .
+<http://example:3333/obs_2099> ssn:observedBy <http://example:3333/oierseoanerubio> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty .
+<http://example:3333/impact_b_21> rdfs:comment "Algunas balsas de agua por las precipitaciones"@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_b_21> .
+<http://example:3333/impact_c_21> rdfs:comment "Algunas cosechas dañadas por el granizo"@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_c_21>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2099> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "55" .
+<http://example:3333/obs_2100> a ssn:Observation;
+time:day "2025-06-02";
+time:hour "22:30";
+geo:long "-4.873";
+geo:lat "41.858";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2100>;
+rdfs:comment """A las 21:00 horas, una zona de abundante actividad convectiva situada entre Arévalo (AV) y Medina del Campo (VA) originó una célula de tormenta muy activa que rápidamente se organizó adquiriendo características de supercélula anticiclónica, dejando inicialmente una fuerte granizada con granizos de hasta 4cm en las inmediaciones de Pozal de Gallinas (VA).
+
+Esta supercélula comenzó a tener una propagación anómala hacia el norte-noroeste alimentándose de un flujo débil de noreste en superficie y comenzó a mostrar una RFD (descendencia del flanco trasero) a partir de las 21:30. Destacaba por una importante actividad eléctrica (visualmente más de 30 descargas por minuto) que se hizo muy evidente a las 22:00 horas cuando el mesociclón pasó a unos 10km al oeste de Valladolid. Posteriormente se internó en el páramo de Villanubla dejando granizos de más de 2cm de diámetro en una trayectoria de entre 3 y 5 km de ancho, alcanzando los 5cm a unos 2km al oeste de Villalba de los Alcores (VA) sobre las 22:30. 
+
+A partir de esta hora, la tormenta realizó un ciclo, reemplazando el mesociclón original que empezó a colapsar por uno nuevo, en este periodo aumentó el área afectada por la lluvia y el granizo, pero este disminuyó de tamaño. También provocó fuertes vientos por los efectos que se podían apreciar en los árboles, con algunas ramas rotas. Pasadas las 23:00 horas el nuevo mesociclón también colapsó y la tormenta perdió las características supercélulares completamente, siendo absorbida por un sistema de tormentas que crecía al oeste, limitando con la provincias de Zamora y León.
+
+La tormenta se desplazaba rápidamente hacia el norte-noroeste y tuvo una duración aproximada de 2 horas en las que recorrió algo más de 75 km antes de disiparse. Destacaba el sonido que producía al acercarse: al margen de los truenos, la cortina de granizo generaba un ruido creciente que recordaba al estruendo de fondo de un tren de mercancías. Era posible escucharlo desde varios kilómetros 2 o 3 minutos antes de que la granizada llegara al punto del observador."""@es .
+<http://example:3333/Gdvictorm> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Valladolid"@es .
+<http://example:3333/obs_2100> ssn:observedBy <http://example:3333/Gdvictorm> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty .
+<http://example:3333/impact_b_22> rdfs:comment "Daños en huertos y en vehículos, con abolladuras en chapa y plásticos."@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_b_22> .
+<http://example:3333/impact_c_22> rdfs:comment "Rotura de ramas de árboles, pérdida de hojas."@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_c_22>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2100> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "851" .
+<http://example:3333/obs_2103> a ssn:Observation;
+time:day "2025-05-14";
+time:hour "14:30";
+geo:long "0.140";
+geo:lat "42.413";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2103>;
+rdfs:comment "Una intensa tormenta cuasiestacionaria con gran intensidad de precipitación y granizo afectando durante al menos media hora a las localidades de Aínsa, Boltaña y Guaso."@es .
+<http://example:3333/jsanambrosiob> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Huesca"@es .
+<http://example:3333/obs_2103> ssn:observedBy <http://example:3333/jsanambrosiob> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty .
+<http://example:3333/impact_b_23> rdfs:comment "Carreteras y caminos bloqueados por la espesa capa de granizo."@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_b_23> .
+<http://example:3333/impact_c_23> rdfs:comment "Daños en campos de cultivo y jardines."@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_c_23>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2103> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "533" .
+<http://example:3333/obs_2104> a ssn:Observation;
+time:day "2025-06-11";
+time:hour "01:00";
+geo:long "-8.878";
+geo:lat "41.966";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2104>;
+rdfs:comment "Sobre las 12 de la noche, horizonte hacia el W continuas descargas cubriendo 180º del ángulo de visión.  Súbitamente comienza a caer el granizo del tamaño de pelotas de golf."@es .
+<http://example:3333/eportillal> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Pontevedra"@es .
+<http://example:3333/obs_2104> ssn:observedBy <http://example:3333/eportillal> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_24>,<http://example:3333/impact_c_24>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2104> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "131" .
+<http://example:3333/obs_2105> a ssn:Observation;
+time:day "2025-06-03";
+time:hour "15:00";
+geo:long "-4.743";
+geo:lat "40.533";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2105>;
+rdfs:comment "fue un día de mucha inestabilidad con formación de cumulonimbos y tormentas"@es .
+<http://example:3333/jgordalizab> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Ávila"@es .
+<http://example:3333/obs_2105> ssn:observedBy <http://example:3333/jgordalizab> .
+<http://example:3333/prop_Tuba> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_25>,<http://example:3333/impact_c_25>;
+rdfs:label "Tuba"@es .
+<http://example:3333/obs_2105> ssn:observedProperty <http://example:3333/prop_Tuba>;
+geo:alt "1386" .
+<http://example:3333/obs_2106> a ssn:Observation;
+time:day "2025-06-02";
+time:hour "15:00";
+geo:long "-2.603";
+geo:lat "41.839";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2106>;
+rdfs:comment "día muy inestable con numerosos chubascos fuertes o muy fuertes con probable granizo en la provincia de Soria"@es .
+<http://example:3333/jgordalizab> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Soria"@es .
+<http://example:3333/obs_2106> ssn:observedBy <http://example:3333/jgordalizab> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_26>,<http://example:3333/impact_c_26>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2106> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "1071" .
+<http://example:3333/obs_2107> geo:long "-2.717";
+geo:lat "42.890";
+a ssn:Observation;
+time:day "2025-05-30";
+time:hour "16:50";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2107>;
+rdfs:comment "Línea de inestabilidad se forma en la meseta norte peninsular y avanza hacia el Golfo de Vizcaya."@es .
+<http://example:3333/MMANJONL> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Álava"@es .
+<http://example:3333/obs_2107> ssn:observedBy <http://example:3333/MMANJONL> .
+<http://example:3333/prop_Reventón%20/%20Frente%20de%20racha> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_27>,<http://example:3333/impact_c_27>;
+rdfs:label "Reventón / Frente de racha"@es .
+<http://example:3333/obs_2107> ssn:observedProperty <http://example:3333/prop_Reventón%20/%20Frente%20de%20racha>;
+geo:alt "509" .
+<http://example:3333/obs_2108> a ssn:Observation;
+time:day "2025-06-11";
+time:hour "17:45";
+geo:long "-3.768";
+geo:lat "40.395";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2108>;
+rdfs:comment "Empezaron a caer granizos del tamaño de pelotas de ping pong durante unos diez o quince minutos."@es .
+<http://example:3333/matgs> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Madrid"@es .
+<http://example:3333/obs_2108> ssn:observedBy <http://example:3333/matgs> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_28>,<http://example:3333/impact_c_28>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2108> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "677" .
+<http://example:3333/obs_2109> a ssn:Observation;
+time:day "2025-06-11";
+time:hour "12:35";
+geo:long "-4.044";
+geo:lat "39.882";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2109>;
+rdfs:comment "Al paso de una tormenta sin apenas precipitación, comenzó  una granizada escasa pero con elementos grandes. Duró apenas 5 min."@es .
+<http://example:3333/lbanonp> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Toledo"@es .
+<http://example:3333/obs_2109> ssn:observedBy <http://example:3333/lbanonp> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty .
+<http://example:3333/impact_b_29> rdfs:comment "Desconocidos"@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_b_29> .
+<http://example:3333/impact_c_29> rdfs:comment "Desconocidos"@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_c_29>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2109> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "502" .
+<http://example:3333/obs_2110> a ssn:Observation;
+time:day "2025-06-11";
+time:hour "19:20";
+geo:long "-3.150";
+geo:lat "40.630";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2110>;
+rdfs:comment "Al paso de una tormenta, se produjo una importante granizada acompañada de lluvia, que originó numerosas incidencias en la ciudad de Guadalajara. Se registraron gran cantidad de rayos, rachas de viento que alcanzaron los 100 km/h y una intensidad máxima de precipitación de 142.8 mm/h."@es .
+<http://example:3333/mvalverdeb> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Guadalajara"@es .
+<http://example:3333/obs_2110> ssn:observedBy <http://example:3333/mvalverdeb> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_30>,<http://example:3333/impact_c_30>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2110> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "728" .
+<http://example:3333/obs_2111> a ssn:Observation;
+time:day "2025-06-13";
+time:hour "22:00";
+geo:long "-2.099";
+geo:lat "43.101";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2111>;
+rdfs:comment "Sobre las 20:00, después de las primeras tormentas de las cuáles la que afectó a Azpeitia y Zarautz fue una supercelula, sobre las 20;00 se formó una linea de tormentas que se movió hacia el norte dejando fuertes lluvias y granizo de 3-4 cm a su paso , sobre las 21:00, un tren convectivo quedó estático sobre el interior de Gipuzkoa, especialmente en la cuenca del río Oria que dejó acumulados significativos durante ese periodo de tiempo."@es .
+<http://example:3333/oierseoanerubio> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Guipúzcoa"@es .
+<http://example:3333/obs_2111> ssn:observedBy <http://example:3333/oierseoanerubio> .
+<http://example:3333/prop_Precipitación%20Súbita%20Torrencial> a aemet:AmbientProperty .
+<http://example:3333/impact_b_31> rdfs:comment "Daños causados principalmente en garajes inundadoños"@es .
+<http://example:3333/prop_Precipitación%20Súbita%20Torrencial> sorelsc:hasImpact <http://example:3333/impact_b_31> .
+<http://example:3333/impact_c_31> rdfs:comment "Desprendimientos, cortes en la linea de trenes de Gipuzkoa, garajes inundados, desbordamientos locales y crecida del río Oria"@es .
+<http://example:3333/prop_Precipitación%20Súbita%20Torrencial> sorelsc:hasImpact <http://example:3333/impact_c_31>;
+rdfs:label "Precipitación Súbita Torrencial"@es .
+<http://example:3333/obs_2111> ssn:observedProperty <http://example:3333/prop_Precipitación%20Súbita%20Torrencial>;
+geo:alt "109" .
+<http://example:3333/obs_2112> time:day "2025-06-13";
+time:hour "20:00";
+a ssn:Observation;
+geo:long "-2.071";
+geo:lat "43.147";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2112>;
+rdfs:comment "Al igual que con el reporte publicado en Alegia, la misma tormenta quedó estática y regenerándose sobre la cuenca del río Oria dejando lluvias muy fuertes y persistentes causando una crecida de 3 metros en el río Oria en la estación de Lasarte - Oria, causando desprendimientos e inundaciones."@es .
+<http://example:3333/oierseoanerubio> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Gipuzkoa"@es .
+<http://example:3333/obs_2112> ssn:observedBy <http://example:3333/oierseoanerubio> .
+<http://example:3333/prop_Precipitación%20Súbita%20Torrencial> a aemet:AmbientProperty .
+<http://example:3333/impact_b_32> rdfs:comment "Inundaciones en Larramendi, Amaroz, Kondeko aldapa y San Esteban"@es .
+<http://example:3333/prop_Precipitación%20Súbita%20Torrencial> sorelsc:hasImpact <http://example:3333/impact_b_32> .
+<http://example:3333/impact_c_32> rdfs:comment "Inundaciones en diferentes puntos del municipio, todavía se desconoce la cantidad en cuanto a la valoración de los daños"@es .
+<http://example:3333/prop_Precipitación%20Súbita%20Torrencial> sorelsc:hasImpact <http://example:3333/impact_c_32>;
+rdfs:label "Precipitación Súbita Torrencial"@es .
+<http://example:3333/obs_2112> ssn:observedProperty <http://example:3333/prop_Precipitación%20Súbita%20Torrencial>;
+geo:alt "73" .
+<http://example:3333/obs_2113> time:day "2025-06-15";
+time:hour "17:35";
+a ssn:Observation;
+geo:long "-2.156";
+geo:lat "39.204";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2113>;
+rdfs:comment "Tormenta que descargó, según medios locales, más de 60 mm de precipitación (lluvia y granizo) en pocos minutos"@es .
+<http://example:3333/vtureganoa> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Albacete"@es .
+<http://example:3333/obs_2113> ssn:observedBy <http://example:3333/vtureganoa> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty .
+<http://example:3333/impact_b_33> rdfs:comment "Garajes anegados, cristales rotos, rotura del reloj de la Iglesia del Salvador."@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_b_33>,<http://example:3333/impact_c_33>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2113> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "703" .
+<http://example:3333/obs_2114> a ssn:Observation;
+time:day "2025-06-19";
+time:hour "18:25";
+geo:long "-2.170";
+geo:lat "42.348";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2114>;
+rdfs:comment "Imagen capturada en el radar de zoom earth con posible evidencia de granizo cercano o por encima de 23 mm de diámetro"@es .
+<http://example:3333/GDStudios> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "La Rioja"@es .
+<http://example:3333/obs_2114> ssn:observedBy <http://example:3333/GDStudios> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_34>,<http://example:3333/impact_c_34>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2114> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "521" .
+<http://example:3333/obs_2115> time:day "2025-06-10";
+a ssn:Observation;
+time:hour "22:40";
+geo:long "-8.973";
+geo:lat "42.225";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2115>;
+rdfs:comment "En la noche del 10 de junio se avistaba una supercélula frente a las costas occidentales Gallegas en el radar doppler que era de tal magnitud que me puse a analizar los pequeños detalles que darían lugar a unos sospechosos vórtices bien formados en esta otra imagen que se toma del mismo radar, la supercélula bien solo parecía un frente pero habían pequeños mesociclónes aislados dentro debido a la helicidad de aquel día, no sabemos si llegaron a tocar tierra, la supercélula la estuvimos vigilando hasta las 23:30 de ese mismo día, como era de noche es difícil saber si llegaron a formarse, hasta que con los datos recopilados le dije a chatGPT que cuantos tornados me estimarías, y otros que superaran las categorías EF2, en la imagen está la respuesta a la pregunta"@es .
+<http://example:3333/GDStudios> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Pontevedra"@es .
+<http://example:3333/obs_2115> ssn:observedBy <http://example:3333/GDStudios> .
+<http://example:3333/prop_Tornado%20/%20Tromba%20Marina> a aemet:AmbientProperty .
+<http://example:3333/impact_b_35> rdfs:comment "Se desconoce"@es .
+<http://example:3333/prop_Tornado%20/%20Tromba%20Marina> sorelsc:hasImpact <http://example:3333/impact_b_35> .
+<http://example:3333/impact_c_35> rdfs:comment "Se desconoce"@es .
+<http://example:3333/prop_Tornado%20/%20Tromba%20Marina> sorelsc:hasImpact <http://example:3333/impact_c_35>;
+rdfs:label "Tornado / Tromba Marina"@es .
+<http://example:3333/obs_2115> ssn:observedProperty <http://example:3333/prop_Tornado%20/%20Tromba%20Marina>;
+geo:alt "-99" .
+<http://example:3333/obs_2116> a ssn:Observation;
+time:day "2025-06-11";
+time:hour "21:40";
+geo:long "-1.641";
+geo:lat "42.768";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2116>;
+rdfs:comment "Una línea de inestabilidad cruzó rapidamente procedente del Oeste/Suroeste en dirección Este/Nordeste. De forma súbita la velocidad del viento alcanza los 85 km/h en la cabecera 33 del aeropuerto de Pamplona, tanto en el anemómetro de la cabecera 15 como en el jardín meteorológico se registran 72 km/h. En 15 minutos la temperatura desciende 7 grados y viene acompañado de precipitación fuerte(máximos de 24 mm/h) y una gran cantidad de rayos."@es .
+<http://example:3333/omalepp> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Navarra"@es .
+<http://example:3333/obs_2116> ssn:observedBy <http://example:3333/omalepp> .
+<http://example:3333/prop_Reventón%20/%20Frente%20de%20racha> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_36>,<http://example:3333/impact_c_36>;
+rdfs:label "Reventón / Frente de racha"@es .
+<http://example:3333/obs_2116> ssn:observedProperty <http://example:3333/prop_Reventón%20/%20Frente%20de%20racha>;
+geo:alt "455" .
+<http://example:3333/obs_2117> a ssn:Observation;
+time:day "2025-06-25";
+time:hour "15:00";
+geo:long "-1.984";
+geo:lat "43.320";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2117>;
+rdfs:comment "Sobre las 14:00 se forma una supercelula en la zona de Urbasa que da lugar a un storm-splitting o división celular de una tormenta, la de la izquierda afectó a Gipuzkoa, principalmente a la parte más oriental y se fue desplazando de sur a norte hasta llegar a la zona de San Sebastián donde había una convergencia de brisas que potenció la tormenta, dando lugar a lluvias muy fuertes y granizo grande."@es .
+<http://example:3333/oierseoanerubio> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Gipuzkoa"@es .
+<http://example:3333/obs_2117> ssn:observedBy <http://example:3333/oierseoanerubio> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty .
+<http://example:3333/impact_b_37> rdfs:comment "Canalones rotos , daños en el parque de Kristina Enea, principalmente en los árboles, así como daños en algunos coches"@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_b_37> .
+<http://example:3333/impact_c_37> rdfs:comment "Daños en el parque de Kristina Enea"@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_c_37>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2117> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "7" .
+<http://example:3333/obs_2118> time:day "2025-06-13";
+a ssn:Observation;
+time:hour "20:00";
+geo:long "-0.745";
+geo:lat "41.303";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2118>;
+rdfs:comment "Durante la tarde del día 13 de junio se formó una línea de turbonada orientada de SW a NE cerca del límite entre las provincias de Zaragoza y Teruel. En una momento dado una célula marcadamente intensa se separó ligeramente de esta línea de turbonada afectando a Belchite y zonas próximas."@es .
+<http://example:3333/jsanambrosiob> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Zaragoza"@es .
+<http://example:3333/obs_2118> ssn:observedBy <http://example:3333/jsanambrosiob> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty .
+<http://example:3333/impact_b_38> rdfs:comment "Se desonoce"@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_b_38> .
+<http://example:3333/impact_c_38> rdfs:comment "Se desconoce"@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_c_38>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2118> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "432" .
+<http://example:3333/obs_2119> a ssn:Observation;
+time:hour "16:00";
+time:day "2025-07-05";
+geo:long "2.635";
+geo:lat "41.956";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2119>;
+rdfs:comment "Precipitación torrencial que afectó especialmente la comarca de la Selva, con acumulaciones superiores a los 120 mm debido a la persistencia de las tormentas en la localidad de Anglès."@es .
+<http://example:3333/CarlesP> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Girona"@es .
+<http://example:3333/obs_2119> ssn:observedBy <http://example:3333/CarlesP> .
+<http://example:3333/prop_Precipitación%20Súbita%20Torrencial> a aemet:AmbientProperty .
+<http://example:3333/impact_b_39> rdfs:comment "Inundación de algunos bajos"@es .
+<http://example:3333/prop_Precipitación%20Súbita%20Torrencial> sorelsc:hasImpact <http://example:3333/impact_b_39>,<http://example:3333/impact_c_39>;
+rdfs:label "Precipitación Súbita Torrencial"@es .
+<http://example:3333/obs_2119> ssn:observedProperty <http://example:3333/prop_Precipitación%20Súbita%20Torrencial>;
+geo:alt "154" .
+<http://example:3333/obs_2120> a ssn:Observation;
+time:day "2025-06-09";
+time:hour "06:20";
+geo:long "-6.367";
+geo:lat "36.621";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2120>;
+rdfs:comment "Repentinamente, junto con un ascenso de temperatura y un descenso brusco de presión"@es .
+<http://example:3333/plopez> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Cádiz"@es .
+<http://example:3333/obs_2120> ssn:observedBy <http://example:3333/plopez> .
+<http://example:3333/prop_Reventón%20Cálido> a aemet:AmbientProperty .
+<http://example:3333/impact_b_40> rdfs:comment """Destrozos en mobiliario urbano en Rota (Cádiz)
+Árboles arrancados de su alcorque 
+Daños en chiringuitos de playa
+Daños en infraestructuras de playa"""@es .
+<http://example:3333/prop_Reventón%20Cálido> sorelsc:hasImpact <http://example:3333/impact_b_40>,<http://example:3333/impact_c_40>;
+rdfs:label "Reventón Cálido"@es .
+<http://example:3333/obs_2120> ssn:observedProperty <http://example:3333/prop_Reventón%20Cálido>;
+geo:alt "4" .
+<http://example:3333/obs_2121> time:day "2025-07-12";
+a ssn:Observation;
+time:hour "17:30";
+geo:long "-0.120";
+geo:lat "39.896";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2121>;
+rdfs:comment "Estaba lloviendo en una tormenta, también con rayos, cuando empezó a granizar"@es .
+<http://example:3333/IsabelSancheez> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Castelló"@es .
+<http://example:3333/obs_2121> ssn:observedBy <http://example:3333/IsabelSancheez> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_41> .
+<http://example:3333/impact_c_41> rdfs:comment "Hortaliza y árboles"@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_c_41>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2121> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "28" .
+<http://example:3333/obs_2122> a ssn:Observation;
+time:day "2025-07-12";
+time:hour "18:30";
+geo:long "-0.156";
+geo:lat "39.858";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2122>;
+rdfs:comment "Empezó con lluvia fina acompañado de viento, de repente emepezó a llover con más intensidad sin apenas visibilidad y caer piedra de considerable diámetro"@es .
+<http://example:3333/PCNules> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Castelló"@es .
+<http://example:3333/obs_2122> ssn:observedBy <http://example:3333/PCNules> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty .
+<http://example:3333/impact_b_42> rdfs:comment "Rotura de cristales de ventanales, lunas de coche, persianas, fachadas"@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_b_42> .
+<http://example:3333/impact_c_42> rdfs:comment "Diversos árboles caídos en vía pública cortando el tráfico de vehículos."@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_c_42>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2122> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "15" .
+<http://example:3333/obs_2123> a ssn:Observation;
+time:day "2025-07-12";
+time:hour "17:30";
+geo:long "-0.074";
+geo:lat "39.867";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2123>;
+rdfs:comment "A las 17:10 ya se podía observar una supercecula aproximándose, esta dejo a su paso granizo de gran tamaño y precipitaciones torrenciales del valor aproximado de 70 l/h y vientos de 90 km/h."@es .
+<http://example:3333/MarcosR> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Castelló"@es .
+<http://example:3333/obs_2123> ssn:observedBy <http://example:3333/MarcosR> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty .
+<http://example:3333/impact_b_43> rdfs:comment "Multitud lunas de coches fueron destruidas."@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_b_43>,<http://example:3333/impact_c_43>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2123> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "2" .
+<http://example:3333/obs_2124> time:hour "18:00";
+time:day "2025-06-14";
+a ssn:Observation;
+geo:long "-1.166";
+geo:lat "41.793";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2124>;
+rdfs:comment "Una serie de tormentas altamente organizadas y con gran aparato eléctrico se desplazaban de SW a NE, una de ellas afectó de lleno a la localidad de Cabañas de Ebro, dejando esta granizada."@es .
+<http://example:3333/jsanambrosiob> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Zaragoza"@es .
+<http://example:3333/obs_2124> ssn:observedBy <http://example:3333/jsanambrosiob> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty .
+<http://example:3333/impact_b_44> rdfs:comment "Daños en coches y en tejados"@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_b_44> .
+<http://example:3333/impact_c_44> rdfs:comment "Daños en huertos y en cosechas."@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_c_44>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2124> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "219" .
+<http://example:3333/obs_2125> time:day "2025-07-02";
+a ssn:Observation;
+time:hour "16:40";
+geo:long "-4.196";
+geo:lat "41.767";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2125>;
+rdfs:comment "día muy convectivo con chubascos acompañados de tormenta y granizo en esa zona"@es .
+<http://example:3333/jgordalizab> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Valladolid"@es .
+<http://example:3333/obs_2125> ssn:observedBy <http://example:3333/jgordalizab> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_45>,<http://example:3333/impact_c_45>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2125> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "804" .
+<http://example:3333/obs_2126> a ssn:Observation;
+time:day "2025-07-03";
+time:hour "19:25";
+geo:long "-4.386";
+geo:lat "42.404";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2126>;
+rdfs:comment "día muy convectivo con abundantes chubascos acompañados de granizo"@es .
+<http://example:3333/jgordalizab> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Palencia"@es .
+<http://example:3333/obs_2126> ssn:observedBy <http://example:3333/jgordalizab> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty .
+<http://example:3333/impact_b_46> rdfs:comment "lunas de vehículos"@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_b_46>,<http://example:3333/impact_c_46>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2126> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "813" .
+<http://example:3333/obs_2127> a ssn:Observation;
+time:day "2025-07-04";
+time:hour "20:30";
+geo:long "-4.913";
+geo:lat "41.314";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2127>;
+rdfs:comment "chubascos de intensidad muy fuerte acompañados de tormenta y probable granizo"@es .
+<http://example:3333/jgordalizab> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Valladolid"@es .
+<http://example:3333/obs_2127> ssn:observedBy <http://example:3333/jgordalizab> .
+<http://example:3333/prop_Precipitación%20Súbita%20Torrencial> a aemet:AmbientProperty .
+<http://example:3333/impact_b_47> rdfs:comment "inundaciones en bajos"@es .
+<http://example:3333/prop_Precipitación%20Súbita%20Torrencial> sorelsc:hasImpact <http://example:3333/impact_b_47>,<http://example:3333/impact_c_47>;
+rdfs:label "Precipitación Súbita Torrencial"@es .
+<http://example:3333/obs_2127> ssn:observedProperty <http://example:3333/prop_Precipitación%20Súbita%20Torrencial>;
+geo:alt "719" .
+<http://example:3333/obs_2128> a ssn:Observation;
+time:day "2025-07-09";
+time:hour "21:30";
+geo:long "-3.078";
+geo:lat "41.585";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2128>;
+rdfs:comment """chubascos de muy fuerte intensidad acompañado de granizo;
+como dato de AEMET en Burgo de Osma se registraron 36,4 litros/m2 en 1 hora"""@es .
+<http://example:3333/jgordalizab> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Soria"@es .
+<http://example:3333/obs_2128> ssn:observedBy <http://example:3333/jgordalizab> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty .
+<http://example:3333/impact_b_48> rdfs:comment "inundaciones de bajos"@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_b_48>,<http://example:3333/impact_c_48>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2128> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "894" .
+<http://example:3333/obs_2129> a ssn:Observation;
+time:day "2025-07-11";
+time:hour "18:30";
+geo:long "-3.718";
+geo:lat "42.935";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2129>;
+rdfs:comment "Varias supercélulas ciclónicas generaron los granizos de &gt; 5 cm y una anticiclónica dejó granizos de 2 cm en el entorno de Arija y oeste de Valdebezana. La reflectividad radar fue de unos 60 dBz. Muy localmente algún granizo pudo alcanzar los 7 cm, ya que los granizos recogidos fueron posteriores al fenómeno en algunos casos."@es .
+<http://example:3333/GorkaHermoso> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Burgos"@es .
+<http://example:3333/obs_2129> ssn:observedBy <http://example:3333/GorkaHermoso> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty .
+<http://example:3333/impact_b_49> rdfs:comment "Daños en lunas de coches."@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_b_49> .
+<http://example:3333/impact_c_49> rdfs:comment "Daños en cultivos."@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_c_49>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2129> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "948" .
+<http://example:3333/obs_2130> time:hour "21:45";
+time:day "2025-08-12";
+a ssn:Observation;
+geo:long "-0.996";
+geo:lat "41.714";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2130>;
+rdfs:comment "Tormenta situada al norte de la zona con un lento desplazamiento hacia el SW, que se mantuvo durante casi media hora en la misma zona, provocando en su parte delantera fuertes rachas de viento sostenidas durante una hora."@es .
+<http://example:3333/meteo_aragon> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Zaragoza"@es .
+<http://example:3333/obs_2130> ssn:observedBy <http://example:3333/meteo_aragon> .
+<http://example:3333/prop_Reventón%20/%20Frente%20de%20racha> a aemet:AmbientProperty .
+<http://example:3333/impact_b_50> rdfs:comment "Placas solares arrancadas de algunos tejados y señales de trafico dobladas"@es .
+<http://example:3333/prop_Reventón%20/%20Frente%20de%20racha> sorelsc:hasImpact <http://example:3333/impact_b_50> .
+<http://example:3333/impact_c_50> rdfs:comment "Varios arboles de gran porte han resultado derribados por la fuerza del viento, y caída de multitud de ramas"@es .
+<http://example:3333/prop_Reventón%20/%20Frente%20de%20racha> sorelsc:hasImpact <http://example:3333/impact_c_50>;
+rdfs:label "Reventón / Frente de racha"@es .
+<http://example:3333/obs_2130> ssn:observedProperty <http://example:3333/prop_Reventón%20/%20Frente%20de%20racha>;
+geo:alt "207" .
+<http://example:3333/obs_2131> a ssn:Observation;
+time:day "2025-06-13";
+time:hour "17:45";
+geo:long "-0.500";
+geo:lat "41.429";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2131>;
+rdfs:comment "Tormenta procedente del campo de Belchite dirección N-NE que adquiere fuerza al llegar al valle del Ebro y descarga aproximadamente a las 17:45 granizo de gran tamaño en Quinto y sus alrededores"@es .
+<http://example:3333/meteo_aragon> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Zaragoza"@es .
+<http://example:3333/obs_2131> ssn:observedBy <http://example:3333/meteo_aragon> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty .
+<http://example:3333/impact_b_51> rdfs:comment "Destrozos en tejados de uralita, multitud de lunas de coches reventadas por la fuerza del granizo, y dos personas resultaros heridas de carácter leve, una por el impacto del granizo y otra por cortes de cristal al reventar este por el tamaño del granizo"@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_b_51> .
+<http://example:3333/impact_c_51> rdfs:comment "Cosecha del cereal perdida y frutales dañados (Tanto algunas ramas como el fruto)"@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_c_51>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2131> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "163" .
+<http://example:3333/obs_2132> a ssn:Observation;
+time:day "2025-07-11";
+time:hour "22:30";
+geo:long "-1.169";
+geo:lat "41.743";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2132>;
+rdfs:comment "Tormenta estática en el entorno de la ribera Alta del Ebro, que descargo en Grisén durante 45 minutos con intensidad torrencial, llegándose a acumular en ese periodo de tiempo cerca de 116 mm, y 130 mm en una hora. Entorno a las 23:15, ceso por completo la tormenta, tras realizar los bomberos ocho rescates. No hubo por suerte crecidas muy importantes en ríos, ya que es una zona en su mayoría plana, con desniveles no muy pronunciados, pero a pesar de ello los pocos barrancos que hay en la zona sufrieron crecidas importantes"@es .
+<http://example:3333/meteo_aragon> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Zaragoza"@es .
+<http://example:3333/obs_2132> ssn:observedBy <http://example:3333/meteo_aragon> .
+<http://example:3333/prop_Precipitación%20Súbita%20Torrencial> a aemet:AmbientProperty .
+<http://example:3333/impact_b_52> rdfs:comment "Personas atrapadas en coches y camiones, que quedaron sumergidos baje el agua, destrozos en la linea de ferrocarril de Zaragoza-Madrid por el desbordamiento de un barranco, pasos subterráneos y autovía A-68 inundada en múltiples tramos, pueblos y polígonos de la zona sufrieron también importante inundaciones"@es .
+<http://example:3333/prop_Precipitación%20Súbita%20Torrencial> sorelsc:hasImpact <http://example:3333/impact_b_52>,<http://example:3333/impact_c_52>;
+rdfs:label "Precipitación Súbita Torrencial"@es .
+<http://example:3333/obs_2132> ssn:observedProperty <http://example:3333/prop_Precipitación%20Súbita%20Torrencial>;
+geo:alt "246" .
+<http://example:3333/obs_2133> time:day "2025-07-23";
+a ssn:Observation;
+time:hour "14:00";
+geo:long "0.997";
+geo:lat "42.131";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2133>;
+rdfs:comment "Día marcado por la convección profunda y organizada en el Pirineo Catalán con tormentas acompañada de granizo de gran tamaño en diversos puntos, afectando especialmente la comarca del Pallars Jussà."@es .
+<http://example:3333/CarlesP> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Lleida"@es .
+<http://example:3333/obs_2133> ssn:observedBy <http://example:3333/CarlesP> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty .
+<http://example:3333/impact_b_53> rdfs:comment "El episodio ha afectado decenas de vehículos, tejados, canalones, granjas y campos de cultivo. En Tremp, el granizo colapsó parte del tejado de una vivienda (Espai Enrique Vicente) y el fuerte viento asociado derrumbó la cubierta del parque de bomberos de Isona"@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_b_53>,<http://example:3333/impact_c_53>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2133> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "548" .
+<http://example:3333/obs_2134> a ssn:Observation;
+time:day "2025-08-22";
+time:hour "15:45";
+geo:long "-0.614";
+geo:lat "38.838";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2134>;
+rdfs:comment "La tormenta llegó procedente del Norte-Noroeste con fuerte viento y lluvia inicial, que dió paso a una potente granizada con granizos que iban aumentando de tamaño hasta llegar a unos 4-5 cm de grosor. La intensidad de la precipitación fue de 1.047,2 mm en 1 hora, con un registro de 23,6 mm en 10 minutos, según los datos de la estación meteorológica Ontinyent-Alt de Toledo, de la red de AVAMET, situado en el lugar de incidencia."@es .
+<http://example:3333/Jasolber> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Valencia"@es .
+<http://example:3333/obs_2134> ssn:observedBy <http://example:3333/Jasolber> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty .
+<http://example:3333/impact_b_54> rdfs:comment "Perforación de farolas, persianas, chapa y cristales de vehículos, daños en ventanas, puertas."@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_b_54> .
+<http://example:3333/impact_c_54> rdfs:comment "Afectación a todo el arbolado, en especial, a los frutales, árboles de jardín de hoja caduca y algunas perennes (pinos, algarrobos, palmeras, etc.), huertas de hortalizas, frutas y verduras."@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_c_54>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2134> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "395" .
+<http://example:3333/obs_2135> a ssn:Observation;
+time:day "2025-08-24";
+time:hour "14:15";
+geo:long "-4.719";
+geo:lat "36.784";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2135>;
+rdfs:comment "El fenómeno vino asociado a un frente de tormentas que amenazó von dejar lluvias, antes de este fenómeno se levantó un poco de viento en un radio de 2 km de este como avisándome de ello, mientras tanto se dio a formar fuera de mi campo de visión y se acercaba ligeramente hacia el Noreste, no obstante se disolvió al verse afectado por las sierras cercanas obligando a expandirse convirtiéndose en una supercélula débil debido a una convergencia cercana, el LCL es bajo y se prevee que llegue a ser de 800 m conforme vayan pasando las horas y con una cizalladura de 80km/h aprox, no me era de extrañar que se diera aunque todavía estamos lejos del pico de riesgo que se dará a las 5:00 de la madrugada de mañana"@es .
+<http://example:3333/GDStudios> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Málaga"@es .
+<http://example:3333/obs_2135> ssn:observedBy <http://example:3333/GDStudios> .
+<http://example:3333/prop_Tuba> a aemet:AmbientProperty .
+<http://example:3333/impact_b_55> rdfs:comment "No hay datos"@es .
+<http://example:3333/prop_Tuba> sorelsc:hasImpact <http://example:3333/impact_b_55> .
+<http://example:3333/impact_c_55> rdfs:comment "No hay datos"@es .
+<http://example:3333/prop_Tuba> sorelsc:hasImpact <http://example:3333/impact_c_55>;
+rdfs:label "Tuba"@es .
+<http://example:3333/obs_2135> ssn:observedProperty <http://example:3333/prop_Tuba>;
+geo:alt "79" .
+<http://example:3333/obs_2136> a ssn:Observation;
+time:day "2025-08-17";
+time:hour "20:00";
+geo:long "-3.476";
+geo:lat "36.696";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2136>;
+rdfs:comment """En la tarde del 17 de agosto de 2025, hacia las 20 h, se produjo un reventón térmico en la costa granadina, que afectó a varias playas en Salobreña, Motril y Castell del Ferro. Las más afectadas fueron las de Torrenueva y Carchuna. Fue el día álgido de la ola de calor de agosto, y aunque la costa granadina no tenía avisos activos por altas temperaturas, la fuerte insolación y el intenso calentamiento diurno desencadenaron convección que originó tormentas con poca precipitación en las cercanías de la zona. Un reventón térmico es una una corriente de aire descendente de una tormenta, acompañada de precipitación que, en su descenso, se va evaporando antes de llegar al suelo. La masa, al evaporarse el contenido de agua, se vuelve más pesada, se acelera y se comprime adiabáticamente, calentándose. Al chocar con la superficie se expande horizontalmente, generando fuertes rachas de viento.
+En la costa granadina las temperaturas subieron 7ºC, llegando a los 40ºC, y las rachas de viento rondaron los 90 Km/h, generando el caos en las playas, que los usuarios comenzaron a desalojar rápidamente. La Guardia Civil y los equipos de Salvamento y Socorrismo tuvieron que rescatar del mar a unas 7 personas, que no podían volver a la orilla debido a las fuertes rachas de viento. No hubo que lamentar ningún herido. Algunos usuarios refieren haber visto una manga marina adentrarse en Torrenueva. Incluso la estación del Radiotelescopio de Sierra Nevada, a 41 Km al norte de la costa granadina, registró a la misma hora un pico de racha de 99 Km/h."""@es .
+<http://example:3333/egarciat> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Granada"@es .
+<http://example:3333/obs_2136> ssn:observedBy <http://example:3333/egarciat> .
+<http://example:3333/prop_Reventón%20Cálido> a aemet:AmbientProperty .
+<http://example:3333/impact_b_56> rdfs:comment "Ramas rotas, cornisas levantadas, toldos arrancados, piscinas montables y sombrillas volando, cortes de luz puntuales."@es .
+<http://example:3333/prop_Reventón%20Cálido> sorelsc:hasImpact <http://example:3333/impact_b_56>,<http://example:3333/impact_c_56>;
+rdfs:label "Reventón Cálido"@es .
+<http://example:3333/obs_2136> ssn:observedProperty <http://example:3333/prop_Reventón%20Cálido>;
+geo:alt "0" .
+<http://example:3333/obs_2137> a ssn:Observation;
+time:day "2025-06-25";
+time:hour "14:15";
+geo:long "-1.947";
+geo:lat "43.320";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2137>;
+rdfs:comment "Dicho día una DANA se encontraba en la vertiente cantábrica. Un día soleado y ligeramente caluroso fomentó la evolución repentina de Cumulonimbus desde el SW. Al encontrarse con una capa más fría de lo habitual, la creación del granizo fue extremadamente rápida y más grande de lo habitual. La observadora sustituta (Irati Lerchundi Arrechea) que se encontraba en ese momento me llamó de urgencia y me facilitó las imágenes mientras yo observé desde la playa de La Concha su evolución (en este sitio no dejó ningún tipo de granizo). Al llegar yo (responsable de estación) el granizo permanecía allí mismo incluso dentro del pluviómetro."@es .
+<http://example:3333/earamburu> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Gipuzkoa"@es .
+<http://example:3333/obs_2137> ssn:observedBy <http://example:3333/earamburu> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty .
+<http://example:3333/impact_b_57> rdfs:comment "Tejadillos de material plástico"@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_b_57>,<http://example:3333/impact_c_57>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2137> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "43" .
+<http://example:3333/obs_2138> time:day "2025-07-24";
+a ssn:Observation;
+time:hour "14:25";
+geo:long "-1.986";
+geo:lat "43.318";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2138>;
+rdfs:comment "Se avista el fenómeno bajo un Cumulus Congestus, un día de lluvias intermitentes, sin tormenta. La delegada de AEMET en Euskadi Margarita Martín me confirma que en efecto, era una tuba"@es .
+<http://example:3333/earamburu> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Guipúzcoa"@es .
+<http://example:3333/obs_2138> ssn:observedBy <http://example:3333/earamburu> .
+<http://example:3333/prop_Tuba> a aemet:AmbientProperty .
+<http://example:3333/impact_b_58> rdfs:comment "Ninguno"@es .
+<http://example:3333/prop_Tuba> sorelsc:hasImpact <http://example:3333/impact_b_58> .
+<http://example:3333/impact_c_58> rdfs:comment "Ninguno"@es .
+<http://example:3333/prop_Tuba> sorelsc:hasImpact <http://example:3333/impact_c_58>;
+rdfs:label "Tuba"@es .
+<http://example:3333/obs_2138> ssn:observedProperty <http://example:3333/prop_Tuba>;
+geo:alt "8" .
+<http://example:3333/obs_2140> a ssn:Observation;
+time:day "2025-07-23";
+time:hour "13:30";
+geo:long "0.717";
+geo:lat "42.476";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2140>;
+rdfs:comment "Día marcado por la convección profunda y organizada en los Pirineos. Las tormentas fueron acompañadas de granizo de gran tamaño en puntos entre Aragón y Catalunya, especialmente las que afectaron las comarcas de la Ribargoza en Aragón, y el Alta Ribargorça y el Pallars Jussà en Catalunya. La que afectó Montanuy y Vilaller se había formado en la comarca aragonesa de Cinco Villas, desplazándose hacia el este."@es .
+<http://example:3333/CarlesP> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Lleida"@es .
+<http://example:3333/obs_2140> ssn:observedBy <http://example:3333/CarlesP> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty .
+<http://example:3333/impact_b_59> rdfs:comment """En Ginaste, mas de diez coches resultaron dañados por la piedra. 
+
+También se vieron afectados dos explotaciones ganaderas, por daños en sus silos, con perdidas estimadas superiores a 30.000 €."""@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_b_59>,<http://example:3333/impact_c_59>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2140> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "981" .
+<http://example:3333/obs_2141> a ssn:Observation;
+time:day "2025-07-04";
+time:hour "20:10";
+geo:long "-5.547";
+geo:lat "42.618";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2141>;
+rdfs:comment "Aunque las estaciones meteorológicas de AEMET no registraran el evento (hasta 71 km/h en La Virgen), en AVISO AMARILLO, varios pequeños reventones se dieron en la provincia en esa tarde, pero este es el aparentemente más intenso."@es .
+<http://example:3333/Noromet> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "León"@es .
+<http://example:3333/obs_2141> ssn:observedBy <http://example:3333/Noromet> .
+<http://example:3333/prop_Reventón%20/%20Frente%20de%20racha> a aemet:AmbientProperty .
+<http://example:3333/impact_b_60> rdfs:comment "Amplios informes en medios de comunicación local y nacional, que se adjuntan"@es .
+<http://example:3333/prop_Reventón%20/%20Frente%20de%20racha> sorelsc:hasImpact <http://example:3333/impact_b_60> .
+<http://example:3333/impact_c_60> rdfs:comment "Arboles caídos en el norte de la ciudad de León, y en los pueblos del alfoz, sobre todo al noroeste."@es .
+<http://example:3333/prop_Reventón%20/%20Frente%20de%20racha> sorelsc:hasImpact <http://example:3333/impact_c_60>;
+rdfs:label "Reventón / Frente de racha"@es .
+<http://example:3333/obs_2141> ssn:observedProperty <http://example:3333/prop_Reventón%20/%20Frente%20de%20racha>;
+geo:alt "836" .
+<http://example:3333/obs_2142> geo:long "-5.930";
+time:day "2025-07-04";
+a ssn:Observation;
+time:hour "19:20";
+geo:lat "42.268";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2142>;
+rdfs:comment "En un día con AVISO AMARILLO, incluso con aviso en tiempo real por X de AEMET CYL diversas tormentas cruzaban la provincia. La más intensa registrada y con efectos en la población y campos ha sido esta."@es .
+<http://example:3333/Noromet> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "León"@es .
+<http://example:3333/obs_2142> ssn:observedBy <http://example:3333/Noromet> .
+<http://example:3333/prop_Precipitación%20Súbita%20Torrencial> a aemet:AmbientProperty .
+<http://example:3333/impact_b_61> rdfs:comment "Coches fuera de la carretera y semi inundados. El muro del colegio público de Jimenez de Jamuz derrumbado."@es .
+<http://example:3333/prop_Precipitación%20Súbita%20Torrencial> sorelsc:hasImpact <http://example:3333/impact_b_61> .
+<http://example:3333/impact_c_61> rdfs:comment "Árboles caídos incluso en mitad de la carretera"@es .
+<http://example:3333/prop_Precipitación%20Súbita%20Torrencial> sorelsc:hasImpact <http://example:3333/impact_c_61>;
+rdfs:label "Precipitación Súbita Torrencial"@es .
+<http://example:3333/obs_2142> ssn:observedProperty <http://example:3333/prop_Precipitación%20Súbita%20Torrencial>;
+geo:alt "774" .
+<http://example:3333/obs_2143> time:day "2025-09-08";
+a ssn:Observation;
+time:hour "17:15";
+geo:long "-0.887";
+geo:lat "38.141";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2143>;
+rdfs:comment "En las primeras horas de la tarde del lunes 8 de septiembre de 2025, una línea de tormentas gestada en el interior de la Región de Murcia fue avanzando de oeste a este, adentrándose minutos antes de las 17:00 horas por el interior de la comarca de la Vega Baja del Segura. Precisamente, en ese momento, la parte más meridional del núcleo convectivo sufrió un reforzamiento repentino muy destacado, pasando de reflectividades de 36-42 dBZ a 48-60 dBZ, dando lugar a un “Reventón Húmedo”. En su recorrido, afectó especialmente a Benferri, Orihuela (Urbanización Montepinar, Polígono Industrial Puente Alto y extremo norte de la ciudad), Redován, Callosa de Segura, Albatera, Granja de Rocamora y Cox. Se registró precipitación con picos de intensidad torrencial, rachas de viento de más de 100 km/h, granizo menudo, y un extraordinario descenso de las temperaturas (bajada brusca de hasta 11ºC en algunos observatorios)."@es .
+<http://example:3333/MeteOrihuela> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Alicante"@es .
+<http://example:3333/obs_2143> ssn:observedBy <http://example:3333/MeteOrihuela> .
+<http://example:3333/prop_Reventón%20/%20Frente%20de%20racha> a aemet:AmbientProperty .
+<http://example:3333/impact_b_62> rdfs:comment "Derribo de muros, marquesinas y pérgolas; caída de cascotes, barandillas, antenas de telefonía y postes de cableado de luz; voladura de tejas; rotura de persianas, entrada de agua en garajes y viviendas, etc."@es .
+<http://example:3333/prop_Reventón%20/%20Frente%20de%20racha> sorelsc:hasImpact <http://example:3333/impact_b_62> .
+<http://example:3333/impact_c_62> rdfs:comment "Caída de al menos una veintena de árboles de grandes dimensiones, algunos de ellos centenarios, localizados sobre todo en la Carretera N-340 entre Orihuela y el Barrio San Carlos y la Carretera CV-900 entre Orihuela y Redován"@es .
+<http://example:3333/prop_Reventón%20/%20Frente%20de%20racha> sorelsc:hasImpact <http://example:3333/impact_c_62>;
+rdfs:label "Reventón / Frente de racha"@es .
+<http://example:3333/obs_2143> ssn:observedProperty <http://example:3333/prop_Reventón%20/%20Frente%20de%20racha>;
+geo:alt "16" .
+<http://example:3333/obs_2144> a ssn:Observation;
+time:day "2025-07-24";
+time:hour "16:15";
+geo:long "-2.009";
+geo:lat "38.740";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2144>;
+rdfs:comment "Seguí y fotografié la supercélula desde Peñas de san Pedro hasta Hellín. Alejándome cuando caían los primeros granizos.Después, gentes conocidas de la zona me hablaron de los daños, y las inundaciones (parece que en Peñas cayeron 46mm en 40 minutos)."@es .
+<http://example:3333/JoseAGallego> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Albacete"@es .
+<http://example:3333/obs_2144> ssn:observedBy <http://example:3333/JoseAGallego> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty .
+<http://example:3333/impact_b_63> rdfs:comment "daños en huertas, algunas lunas de coches, y sobre todo en bancales de almendros"@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_b_63>,<http://example:3333/impact_c_63>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2144> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "957" .
+<http://example:3333/obs_2145> a ssn:Observation;
+time:day "2025-09-10";
+time:hour "13:05";
+geo:long "3.202";
+geo:lat "41.896";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2145>;
+rdfs:comment "Navegando con embarcación de los agents rurals de la Generalitat observamos una tuba al sur del límite sur del cañon submarino de Palamós, estimamos que frente al Cap de Sant Sebastià, Girona"@es .
+<http://example:3333/Gutarb> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Girona"@es .
+<http://example:3333/obs_2145> ssn:observedBy <http://example:3333/Gutarb> .
+<http://example:3333/prop_Tuba> a aemet:AmbientProperty .
+<http://example:3333/impact_b_64> rdfs:comment "Ninguno"@es .
+<http://example:3333/prop_Tuba> sorelsc:hasImpact <http://example:3333/impact_b_64> .
+<http://example:3333/impact_c_64> rdfs:comment "NInguno"@es .
+<http://example:3333/prop_Tuba> sorelsc:hasImpact <http://example:3333/impact_c_64>;
+rdfs:label "Tuba"@es .
+<http://example:3333/obs_2145> ssn:observedProperty <http://example:3333/prop_Tuba>;
+geo:alt "153" .
+<http://example:3333/obs_2149> time:day "2025-09-20";
+time:hour "21:40";
+a ssn:Observation;
+geo:long "-2.136";
+geo:lat "42.558";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2149>;
+rdfs:comment "El fenómeno sucedió durante un episodio de tormentas virulentas en la que el equipo entero con 3 ocupantes grabamos la tormenta, desde formaciones peculiares de lluvia fuerte a incluso un semi-tornado, del que nos dimos cuenta cuando ya estábamos editando el vídeo, teníamos cogidos unos 90-180 grados de cámara grabando varios puntos de la tormenta, por lo que en el caso mostrado, al final de este vídeo se observa el fenómeno cuya formación parece ser obvia, como si el cielo se cayera, no sabemos los daños, dado que solo grabamos unos segundos y no sabemos si llegó a tocar tierra o si ocasionó daños materiales o forestales"@es .
+<http://example:3333/GDStudios> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Navarra"@es .
+<http://example:3333/obs_2149> ssn:observedBy <http://example:3333/GDStudios> .
+<http://example:3333/prop_Tuba> a aemet:AmbientProperty .
+<http://example:3333/impact_b_65> rdfs:comment "Se desconoce"@es .
+<http://example:3333/prop_Tuba> sorelsc:hasImpact <http://example:3333/impact_b_65> .
+<http://example:3333/impact_c_65> rdfs:comment "Se desconoce"@es .
+<http://example:3333/prop_Tuba> sorelsc:hasImpact <http://example:3333/impact_c_65>;
+rdfs:label "Tuba"@es .
+<http://example:3333/obs_2149> ssn:observedProperty <http://example:3333/prop_Tuba>;
+geo:alt "471" .
+<http://example:3333/obs_2150> time:day "2025-09-19";
+a ssn:Observation;
+time:hour "21:50";
+geo:long "-2.486";
+geo:lat "43.063";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2150>;
+rdfs:comment "Debido a la fuerte influencia causada por la aproximación de una vaguada muy pronunciada, mientras esta entraba por Galicia, por su parte delantera levantaba una dorsal anticiclónica muy potente con isos de 20-24 grados a 850hpa ( unos 1500 metros de altura ), debido también a los vientos del sur o suroeste causados por la interacción de la misma, en las provincias de la vertiente cantábrica como consecuencia del efecto Föhn, es por ello por lo que las temperaturas máximas alcanzaron valores de entre 35-38 grados en el interior tanto de Bizkaia como de Gipuzkoa, durante la tarde empezó a entrar nubosidad de evolución de base alta, que al entrar al mar dejaba algunas precipitaciones acompañadas de aparato eléctrico, sobre las 20:00 entraba una tormenta fuerte por la provincia de Álava a Gipuzkoa que acabo deshaciéndose en la costa occidental de Gipuzkoa, mas tarde se forman mas tormentas en Álava que avanzan de sur a norte y que adquieren cierta organización formando algo parecido a una línea de turbonada, se parecía mas a un tren convectivo que a una línea de turbonada, debido a toda la energía disponible, la tormenta exploto hasta alcanzar ecotops de hasta 14-16km, en el interior de &gt;Gipuzkoa, como consecuencia hubo un reventón con rachas muy fuertes de viento, en otras zonas cercanas el reventón fue seco dándose un ascenso de las temperaturas de entre 6-8 grados como es el caso de Elgoibar."@es .
+<http://example:3333/oierseoanerubio> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Gipuzkoa"@es .
+<http://example:3333/obs_2150> ssn:observedBy <http://example:3333/oierseoanerubio> .
+<http://example:3333/prop_Reventón%20/%20Frente%20de%20racha> a aemet:AmbientProperty .
+<http://example:3333/impact_b_66> rdfs:comment "Algún árbol caído y algunas ramas rotas por el viento"@es .
+<http://example:3333/prop_Reventón%20/%20Frente%20de%20racha> sorelsc:hasImpact <http://example:3333/impact_b_66> .
+<http://example:3333/impact_c_66> rdfs:comment "Algún árbol caído y algunas ramas rotas por el viento"@es .
+<http://example:3333/prop_Reventón%20/%20Frente%20de%20racha> sorelsc:hasImpact <http://example:3333/impact_c_66>;
+rdfs:label "Reventón / Frente de racha"@es .
+<http://example:3333/obs_2150> ssn:observedProperty <http://example:3333/prop_Reventón%20/%20Frente%20de%20racha>;
+geo:alt "224" .
+<http://example:3333/obs_2151> a ssn:Observation;
+time:day "2025-09-19";
+time:hour "17:10";
+geo:long "-4.755";
+geo:lat "41.641";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2151>;
+rdfs:comment "Se observan células tormentosas con gran aparato eléctrico que se dirigen de sur a norte atravesando la ciudad de Valladolid. Datos significativos: 87 km/h de racha máxima, 11,0 litros/m2 en 10 minutos, 16 litros/m2 en una hora"@es .
+<http://example:3333/jgordalizab> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Valladolid"@es .
+<http://example:3333/obs_2151> ssn:observedBy <http://example:3333/jgordalizab> .
+<http://example:3333/prop_Reventón%20/%20Frente%20de%20racha> a aemet:AmbientProperty .
+<http://example:3333/impact_b_67> rdfs:comment "coches por caída de árboles y pequeñas inundaciones en la ciudad"@es .
+<http://example:3333/prop_Reventón%20/%20Frente%20de%20racha> sorelsc:hasImpact <http://example:3333/impact_b_67>,<http://example:3333/impact_c_67>;
+rdfs:label "Reventón / Frente de racha"@es .
+<http://example:3333/obs_2151> ssn:observedProperty <http://example:3333/prop_Reventón%20/%20Frente%20de%20racha>;
+geo:alt "734" .
+<http://example:3333/obs_2152> a ssn:Observation;
+time:day "2025-08-21";
+time:hour "07:30";
+geo:long "-3.836";
+geo:lat "43.430";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2152>;
+rdfs:comment """Se registró intensidad torrencial y se acumuló en 1 hora más de 60 mm. La troposfera se encontraba saturada en niveles bajos y medios con vientos de componente noroeste. Una línea de inestabilidad interaccionó con la orografía, desarrollándose convección embebida entre precipitación estratiforme. Sin embargo, esta convección no llego a ser muy profunda debido a una inversión térmica causada por una masa de aire más cálida y seca en torno a los 4500 metros de altitud. 
+
+Este episodio se ajusta al modelo conceptual conocido como lluvia cálida en el que prácticamente toda la nubosidad se encuentra en fase líquida, de forma que las altas intensidades de precipitación pasan desapercibidas en los satélites y radares meteorológicos."""@es .
+<http://example:3333/LeoDelgado> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Cantabria"@es .
+<http://example:3333/obs_2152> ssn:observedBy <http://example:3333/LeoDelgado> .
+<http://example:3333/prop_Precipitación%20Súbita%20Torrencial> a aemet:AmbientProperty .
+<http://example:3333/impact_b_68> rdfs:comment "Coches, garajes"@es .
+<http://example:3333/prop_Precipitación%20Súbita%20Torrencial> sorelsc:hasImpact <http://example:3333/impact_b_68>,<http://example:3333/impact_c_68>;
+rdfs:label "Precipitación Súbita Torrencial"@es .
+<http://example:3333/obs_2152> ssn:observedProperty <http://example:3333/prop_Precipitación%20Súbita%20Torrencial>;
+geo:alt "1" .
+<http://example:3333/obs_2153> a ssn:Observation;
+time:day "2025-09-24";
+time:hour "07:30";
+geo:long "3.484";
+geo:lat "39.720";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2153>;
+rdfs:comment "Se ha observado a través de webcam una manga marina en las proximidades de una zona afectada por un chubasco."@es .
+<http://example:3333/jprodriguezg> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Illes Balears"@es .
+<http://example:3333/obs_2153> ssn:observedBy <http://example:3333/jprodriguezg> .
+<http://example:3333/prop_Tornado%20/%20Tromba%20Marina> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_69>,<http://example:3333/impact_c_69>;
+rdfs:label "Tornado / Tromba Marina"@es .
+<http://example:3333/obs_2153> ssn:observedProperty <http://example:3333/prop_Tornado%20/%20Tromba%20Marina>;
+geo:alt "0" .
+<http://example:3333/obs_2154> time:day "2025-08-26";
+time:hour "17:00";
+a ssn:Observation;
+geo:long "-6.015";
+geo:lat "36.182";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2154>;
+rdfs:comment "El mar de fondo de la tormenta extratropical Erin llega a las costas gaditanas, provocando en las playas un fuerte oleaje de gran período, que unido a la pleamar de una marea viva, genera corrientes de resaca, que hacen peligroso el baño en las playas. Se izan banderas rojas en prácticamaente todas las playas."@es .
+<http://example:3333/egarciat> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Cádiz"@es .
+<http://example:3333/obs_2154> ssn:observedBy <http://example:3333/egarciat> .
+<http://example:3333/prop_Fenómenos%20marítimos%20raros> a aemet:AmbientProperty .
+<http://example:3333/impact_b_70> rdfs:comment "Pasarelas, contenedores y un chiringuito arrastrados por la corriente."@es .
+<http://example:3333/prop_Fenómenos%20marítimos%20raros> sorelsc:hasImpact <http://example:3333/impact_b_70> .
+<http://example:3333/impact_c_70> rdfs:comment "Playas sin arena."@es .
+<http://example:3333/prop_Fenómenos%20marítimos%20raros> sorelsc:hasImpact <http://example:3333/impact_c_70>;
+rdfs:label "Fenómenos marítimos raros"@es .
+<http://example:3333/obs_2154> ssn:observedProperty <http://example:3333/prop_Fenómenos%20marítimos%20raros>;
+geo:alt "0" .
+<http://example:3333/obs_2155> a ssn:Observation;
+time:day "2025-08-22";
+time:hour "11:45";
+geo:long "2.483";
+geo:lat "39.447";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2155>;
+rdfs:comment "Manga marina observada por webcam en las proximidades de dos zonas con chubascos."@es .
+<http://example:3333/jprodriguezg> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Illes Balears"@es .
+<http://example:3333/obs_2155> ssn:observedBy <http://example:3333/jprodriguezg> .
+<http://example:3333/prop_Tornado%20/%20Tromba%20Marina> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_71>,<http://example:3333/impact_c_71>;
+rdfs:label "Tornado / Tromba Marina"@es .
+<http://example:3333/obs_2155> ssn:observedProperty <http://example:3333/prop_Tornado%20/%20Tromba%20Marina>;
+geo:alt "-29" .
+<http://example:3333/obs_2156> a ssn:Observation;
+time:day "2025-09-21";
+time:hour "16:50";
+geo:long "-0.759";
+geo:lat "38.873";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2156>;
+rdfs:comment "Alrededor de las 16.40 locales se levantó un viento muy fuerte, y en apenas unos minutos llegó la precipitación de intensidad torrencial y el granizo, con aparato eléctrico. Se adjunta videos y fotos de mi autoría."@es .
+<http://example:3333/joancarcal> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Valencia"@es .
+<http://example:3333/obs_2156> ssn:observedBy <http://example:3333/joancarcal> .
+<http://example:3333/prop_Reventón%20/%20Frente%20de%20racha> a aemet:AmbientProperty .
+<http://example:3333/impact_b_72> rdfs:comment "levantamiento de tejas en puente, puerta arrancada"@es .
+<http://example:3333/prop_Reventón%20/%20Frente%20de%20racha> sorelsc:hasImpact <http://example:3333/impact_b_72> .
+<http://example:3333/impact_c_72> rdfs:comment "Cultivos de olivo afectados por viento y pedrisco, caída de árboles"@es .
+<http://example:3333/prop_Reventón%20/%20Frente%20de%20racha> sorelsc:hasImpact <http://example:3333/impact_c_72>;
+rdfs:label "Reventón / Frente de racha"@es .
+<http://example:3333/obs_2156> ssn:observedProperty <http://example:3333/prop_Reventón%20/%20Frente%20de%20racha>;
+geo:alt "340" .
+<http://example:3333/obs_2157> a ssn:Observation;
+time:day "2025-09-13";
+time:hour "12:55";
+geo:long "-3.869";
+geo:lat "40.474";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2157>;
+rdfs:comment "Emergencias ha recibido esta madrugada numerosas llamadas, gestionándose un total de 183 expedientes en toda la Comunidad de Madrid. En concreto, se han realizado 71 intervenciones por caídas de ramas, árboles y cornisas, uno muy aparatoso en Pozuelo de Alarcón.+"@es .
+<http://example:3333/ncho26_> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Madrid"@es .
+<http://example:3333/obs_2157> ssn:observedBy <http://example:3333/ncho26_> .
+<http://example:3333/prop_Reventón%20/%20Frente%20de%20racha> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_73>,<http://example:3333/impact_c_73>;
+rdfs:label "Reventón / Frente de racha"@es .
+<http://example:3333/obs_2157> ssn:observedProperty <http://example:3333/prop_Reventón%20/%20Frente%20de%20racha>;
+geo:alt "732" .
+<http://example:3333/obs_2159> a ssn:Observation;
+time:day "2025-09-22";
+time:hour "18:00";
+geo:long "-3.833";
+geo:lat "43.482";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2159>;
+rdfs:comment "Tuba ocurrida bajo un cumulonimbo cerca de la estación Santander CMT. Fue un día de tormentas en el que se registraron lluvias intensas y persistentes en dicha estación."@es .
+<http://example:3333/LeoDelgado> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Cantabria"@es .
+<http://example:3333/obs_2159> ssn:observedBy <http://example:3333/LeoDelgado> .
+<http://example:3333/prop_Tuba> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_74>,<http://example:3333/impact_c_74>;
+rdfs:label "Tuba"@es .
+<http://example:3333/obs_2159> ssn:observedProperty <http://example:3333/prop_Tuba>;
+geo:alt "7" .
+<http://example:3333/obs_2160> a ssn:Observation;
+time:day "2025-09-23";
+time:hour "16:10";
+geo:long "-3.830";
+geo:lat "43.486";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2160>;
+rdfs:comment "Tromba marina en la costa norte de Santander vista desde Ojaiz."@es .
+<http://example:3333/LeoDelgado> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Cantabria"@es .
+<http://example:3333/obs_2160> ssn:observedBy <http://example:3333/LeoDelgado> .
+<http://example:3333/prop_Tornado%20/%20Tromba%20Marina> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_75>,<http://example:3333/impact_c_75>;
+rdfs:label "Tornado / Tromba Marina"@es .
+<http://example:3333/obs_2160> ssn:observedProperty <http://example:3333/prop_Tornado%20/%20Tromba%20Marina>;
+geo:alt "8" .
+<http://example:3333/obs_2161> time:hour "15:00";
+a ssn:Observation;
+time:day "2025-08-28";
+geo:long "2.088";
+geo:lat "41.292";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2161>;
+rdfs:comment "Tromba marina observada desde el Aeropuerto del Prat"@es .
+<http://example:3333/CarlesP> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Barcelona"@es .
+<http://example:3333/obs_2161> ssn:observedBy <http://example:3333/CarlesP> .
+<http://example:3333/prop_Tornado%20/%20Tromba%20Marina> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_76>,<http://example:3333/impact_c_76>;
+rdfs:label "Tornado / Tromba Marina"@es .
+<http://example:3333/obs_2161> ssn:observedProperty <http://example:3333/prop_Tornado%20/%20Tromba%20Marina>;
+geo:alt "2" .
+<http://example:3333/obs_2162> a ssn:Observation;
+time:day "2025-10-17";
+time:hour "18:50";
+geo:long "1.906";
+geo:lat "41.253";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2162>;
+rdfs:comment "Se formó frente a la Playa de la Carretas de Garraf, avanzando hacia el SO frente al acantilado, y deshaciéndose antes de llegar al espigón del puerto."@es .
+<http://example:3333/Nhanha> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Barcelona"@es .
+<http://example:3333/obs_2162> ssn:observedBy <http://example:3333/Nhanha> .
+<http://example:3333/prop_Tornado%20/%20Tromba%20Marina> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_77>,<http://example:3333/impact_c_77>;
+rdfs:label "Tornado / Tromba Marina"@es .
+<http://example:3333/obs_2162> ssn:observedProperty <http://example:3333/prop_Tornado%20/%20Tromba%20Marina>;
+geo:alt "0" .
+<http://example:3333/obs_2163> time:day "2025-09-21";
+a ssn:Observation;
+time:hour "15:30";
+geo:long "1.840";
+geo:lat "41.595";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2163>;
+rdfs:comment "Condiciones de inestabilidad acusada en el tercio E peninsular durante la tarde, con convección organizada, especialmente en Cataluña, con chubascos muy fuertes/torrenciales y persistentes acompañados de abundante aparato eléctrico (efecto tren convectivo) en el prelitoral de Barcelona"@es .
+<http://example:3333/icampoo> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Barcelona"@es .
+<http://example:3333/obs_2163> ssn:observedBy <http://example:3333/icampoo> .
+<http://example:3333/prop_Precipitación%20Súbita%20Torrencial> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_78> .
+<http://example:3333/impact_c_78> rdfs:comment "Daños en carreteras locales y campos de cultivo."@es .
+<http://example:3333/prop_Precipitación%20Súbita%20Torrencial> sorelsc:hasImpact <http://example:3333/impact_c_78>;
+rdfs:label "Precipitación Súbita Torrencial"@es .
+<http://example:3333/obs_2163> ssn:observedProperty <http://example:3333/prop_Precipitación%20Súbita%20Torrencial>;
+geo:alt "718" .
+<http://example:3333/obs_2164> a ssn:Observation;
+time:day "2025-08-27";
+time:hour "17:30";
+geo:long "-1.216";
+geo:lat "41.330";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2164>;
+rdfs:comment "Durante la tarde se produjeron tormentas que se iban desplazando de W a E, dejaron en la zona granizo de gran tamaño así como precipitación de gran intensidad que causaron inundaciones. Afectaron a Cariñena y a otras poblaciones cercanas."@es .
+<http://example:3333/jsanambrosiob> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Zaragoza"@es .
+<http://example:3333/obs_2164> ssn:observedBy <http://example:3333/jsanambrosiob> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty .
+<http://example:3333/impact_b_79> rdfs:comment "Se desconoce"@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_b_79> .
+<http://example:3333/impact_c_79> rdfs:comment "Se desconoce"@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_c_79>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2164> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "607" .
+<http://example:3333/obs_2165> time:hour "09:05";
+a ssn:Observation;
+time:day "2025-10-09";
+geo:long "2.106";
+geo:lat "41.321";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2165>;
+rdfs:comment "Tromba marina observada desde el Prat de Llobregat"@es .
+<http://example:3333/CarlesP> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Barcelona"@es .
+<http://example:3333/obs_2165> ssn:observedBy <http://example:3333/CarlesP> .
+<http://example:3333/prop_Tornado%20/%20Tromba%20Marina> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_80>,<http://example:3333/impact_c_80>;
+rdfs:label "Tornado / Tromba Marina"@es .
+<http://example:3333/obs_2165> ssn:observedProperty <http://example:3333/prop_Tornado%20/%20Tromba%20Marina>;
+geo:alt "3" .
+<http://example:3333/obs_2166> a ssn:Observation;
+time:day "2025-10-25";
+time:hour "10:10";
+geo:long "-16.294";
+geo:lat "28.399";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2166>;
+rdfs:comment "En el seno de un cúmulo de cierto desarrollo vertical que se desplazaba hacia el noreste, pegado a la costa. Estuvieron amagando durante al menos una hora, llegando a tocar ligeramente la superficie del agua."@es .
+<http://example:3333/ricardo_sanz> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Santa Cruz de Tenerife"@es .
+<http://example:3333/obs_2166> ssn:observedBy <http://example:3333/ricardo_sanz> .
+<http://example:3333/prop_Tuba> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_81>,<http://example:3333/impact_c_81>;
+rdfs:label "Tuba"@es .
+<http://example:3333/obs_2166> ssn:observedProperty <http://example:3333/prop_Tuba>;
+geo:alt "-40" .
+<http://example:3333/obs_2168> a ssn:Observation;
+time:day "2025-11-05";
+time:hour "16:10";
+geo:long "-5.935";
+geo:lat "36.719";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2168>;
+rdfs:comment "Una posible súper célula que entró desde Cádiz dirección el puerto Jerez con algunas inundaciones en el Portal y finalmente granizada en jedula"@es .
+<http://example:3333/cadizmeteo> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Cádiz"@es .
+<http://example:3333/obs_2168> ssn:observedBy <http://example:3333/cadizmeteo> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty .
+<http://example:3333/impact_b_82> rdfs:comment "Coches sobre todo"@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_b_82>,<http://example:3333/impact_c_82>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2168> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "78" .
+<http://example:3333/obs_2169> a ssn:Observation;
+time:day "2025-11-17";
+time:hour "16:00";
+geo:long "4.219";
+geo:lat "40.014";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2169>;
+rdfs:comment "Varias trombas marinas en la zona. Una fotografía capta 5 vórtices simultáneos."@es .
+<http://example:3333/jprodriguezg> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Illes Balears"@es .
+<http://example:3333/obs_2169> ssn:observedBy <http://example:3333/jprodriguezg> .
+<http://example:3333/prop_Tornado%20/%20Tromba%20Marina> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_83>,<http://example:3333/impact_c_83>;
+rdfs:label "Tornado / Tromba Marina"@es .
+<http://example:3333/obs_2169> ssn:observedProperty <http://example:3333/prop_Tornado%20/%20Tromba%20Marina>;
+geo:alt "0" .
+<http://example:3333/obs_2170> time:day "2025-11-17";
+a ssn:Observation;
+time:hour "16:00";
+geo:long "4.286";
+geo:lat "39.951";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2170>;
+rdfs:comment "Manga marina que ha sido detectada gracias a una fotografía."@es .
+<http://example:3333/jprodriguezg> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Illes Balears"@es .
+<http://example:3333/obs_2170> ssn:observedBy <http://example:3333/jprodriguezg> .
+<http://example:3333/prop_Tornado%20/%20Tromba%20Marina> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_84>,<http://example:3333/impact_c_84>;
+rdfs:label "Tornado / Tromba Marina"@es .
+<http://example:3333/obs_2170> ssn:observedProperty <http://example:3333/prop_Tornado%20/%20Tromba%20Marina>;
+geo:alt "0" .
+<http://example:3333/obs_2171> a ssn:Observation;
+time:day "2025-10-29";
+time:hour "09:30";
+geo:long "-6.970";
+geo:lat "37.375";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2171>;
+rdfs:comment "Durante la mañana del 29 de octubre de 2025 se estaba formando, al sur de Portugal, un Sistema Convectivo de Mesoscala que avanzaba hacia el este. La situación (vaguada, con embolsamiento de aire frío en altura, una baja en superficie con frente cálido asociado, inestabilidad térmica y dinámica, gran cizalladura vertical, sobre todo direccional, con formación de células convectivas organizadas) era muy favorable a la formación de tornados mesociclónicos en la zona del Golfo de Cádiz. En las imágenes de satélite se aprecia el gran desarrollo de estas células, y en las de radar, una alta reflectividad, indicativo de la intensidad de las precipitaciones, que iban acompañadas de tormentas, como indicaban los registros de rayos a esa hora. Se debió producir un reventón húmedo, o una línea de turbonada muy activa, pero que no explicarían los daños más graves reportados. A esa hora se debió formar en las cercanías de Gibraleón un vórtice tornádico de fuerza EF2 o quizá algo más, responsable de todos esos daños."@es .
+<http://example:3333/egarciat> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Huelva"@es .
+<http://example:3333/obs_2171> ssn:observedBy <http://example:3333/egarciat> .
+<http://example:3333/prop_Tornado%20/%20Tromba%20Marina> a aemet:AmbientProperty .
+<http://example:3333/impact_b_85> rdfs:comment "Antenas y torres eléctricas colapsadas, cables rotos, muros derribados, tejados de chapa volados, tejas dañadas, vigas retorcidas, coches dañados."@es .
+<http://example:3333/prop_Tornado%20/%20Tromba%20Marina> sorelsc:hasImpact <http://example:3333/impact_b_85> .
+<http://example:3333/impact_c_85> rdfs:comment "Árboles derribados y tronchados."@es .
+<http://example:3333/prop_Tornado%20/%20Tromba%20Marina> sorelsc:hasImpact <http://example:3333/impact_c_85>;
+rdfs:label "Tornado / Tromba Marina"@es .
+<http://example:3333/obs_2171> ssn:observedProperty <http://example:3333/prop_Tornado%20/%20Tromba%20Marina>;
+geo:alt "26" .
+<http://example:3333/obs_2172> a ssn:Observation;
+time:day "2025-10-29";
+time:hour "09:00";
+geo:long "-7.404";
+geo:lat "37.213";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2172>;
+rdfs:comment "Un Sistema Convectivo de Mesoscala se había formado al sur de Portugal de madrugada, y mientras se desplazaba hacia el este, se iba desarrollando y realimentando, dejando a su paso vientos de componente sur muy fuertes, chubascos muy intensos y persistentes, y tormentas. En concreto, en Ayamonte, empezó a llover de madrugada, pero hacia las 9 h descargó un chubasco muy intenso durante unos 45 minutos, que produjo numerosas inundaciones."@es .
+<http://example:3333/egarciat> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Huelva"@es .
+<http://example:3333/obs_2172> ssn:observedBy <http://example:3333/egarciat> .
+<http://example:3333/prop_Precipitación%20Súbita%20Torrencial> a aemet:AmbientProperty .
+<http://example:3333/impact_b_86> rdfs:comment "inundaciones"@es .
+<http://example:3333/prop_Precipitación%20Súbita%20Torrencial> sorelsc:hasImpact <http://example:3333/impact_b_86> .
+<http://example:3333/impact_c_86> rdfs:comment "inundaciones"@es .
+<http://example:3333/prop_Precipitación%20Súbita%20Torrencial> sorelsc:hasImpact <http://example:3333/impact_c_86>;
+rdfs:label "Precipitación Súbita Torrencial"@es .
+<http://example:3333/obs_2172> ssn:observedProperty <http://example:3333/prop_Precipitación%20Súbita%20Torrencial>;
+geo:alt "4" .
+<http://example:3333/obs_2173> time:day "2025-10-29";
+a ssn:Observation;
+time:hour "11:10";
+geo:long "-6.517";
+geo:lat "37.259";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2173>;
+rdfs:comment "Durante la mañana del 29 de octubre de 2025 se estaba formando, al sur de Portugal, un Sistema Convectivo de Mesoscala que avanzaba hacia el este. La situación meteorológica (vaguada, con embolsamiento de aire frío en altura, una baja en superficie con frente cálido asociado, inestabilidad térmica y dinámica, y gran cizalladura vertical, sobre todo direccional) era muy favorable a la formación de células convectivas organizadas en la zona del Golfo de Cádiz. El Sistema Convectivo de Mesoscala se iba realimentando a la vez que se desarrollaba y se desplazaba al este. En las imágenes de satélite se aprecia el gran desarrollo de estas células, y en las de radar, una alta reflectividad, indicativo de la intensidad de las precipitaciones, que iban acompañadas de tormentas, como indicaban los registros de rayos. En Almonte comenzó a llover de madrugada, pero hacia las 11 h los chubascos se intensificaron, llegando a registrarse 78 mm en 3 horas, y 64 mm en 1 hora, con intensidades puntuales de precipitación de 120 mm/h, que produjeron numerosas inundaciones."@es .
+<http://example:3333/egarciat> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Huelva"@es .
+<http://example:3333/obs_2173> ssn:observedBy <http://example:3333/egarciat> .
+<http://example:3333/prop_Precipitación%20Súbita%20Torrencial> a aemet:AmbientProperty .
+<http://example:3333/impact_b_87> rdfs:comment "Inundaciones"@es .
+<http://example:3333/prop_Precipitación%20Súbita%20Torrencial> sorelsc:hasImpact <http://example:3333/impact_b_87> .
+<http://example:3333/impact_c_87> rdfs:comment "Inundaciones"@es .
+<http://example:3333/prop_Precipitación%20Súbita%20Torrencial> sorelsc:hasImpact <http://example:3333/impact_c_87>;
+rdfs:label "Precipitación Súbita Torrencial"@es .
+<http://example:3333/obs_2173> ssn:observedProperty <http://example:3333/prop_Precipitación%20Súbita%20Torrencial>;
+geo:alt "70" .
+<http://example:3333/obs_2174> time:hour "00:15";
+time:day "2025-11-21";
+a ssn:Observation;
+geo:long "-1.947";
+geo:lat "43.320";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2174>;
+rdfs:comment "Granizada singular no engelante, de granizo pequeño pero abundante, obstruyendo cañerías y apilándose encima de parabrisas de vehículos. Sucede tras la llegada de un pequeño núcleo, que se deduce ser un Cumulus Congestus, sin aparato eléctrico. Los hechos suceden durante la noche en la que llega una masa de aire polar ártica a -36ºC en 500hPa, 5.2º en superficie en el momento del evento"@es .
+<http://example:3333/earamburu> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Gipuzkoa"@es .
+<http://example:3333/obs_2174> ssn:observedBy <http://example:3333/earamburu> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_88>,<http://example:3333/impact_c_88>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2174> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "44" .
+<http://example:3333/obs_2175> a ssn:Observation;
+time:day "2025-11-21";
+time:hour "08:00";
+geo:long "2.627";
+geo:lat "39.763";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2175>;
+rdfs:comment "Manga marina observada gracias a vídeos y fotografías"@es .
+<http://example:3333/jprodriguezg> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Illes Balears"@es .
+<http://example:3333/obs_2175> ssn:observedBy <http://example:3333/jprodriguezg> .
+<http://example:3333/prop_Tornado%20/%20Tromba%20Marina> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_89>,<http://example:3333/impact_c_89>;
+rdfs:label "Tornado / Tromba Marina"@es .
+<http://example:3333/obs_2175> ssn:observedProperty <http://example:3333/prop_Tornado%20/%20Tromba%20Marina>;
+geo:alt "0" .
+<http://example:3333/obs_2176> a ssn:Observation;
+time:day "2025-11-26";
+time:hour "09:15";
+geo:long "3.439";
+geo:lat "39.704";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2176>;
+rdfs:comment "Línea de tormentas que dejó una granizada que cubrió el municipio, acumulando varios centímetros de espesor."@es .
+<http://example:3333/jprodriguezg> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Illes Balears"@es .
+<http://example:3333/obs_2176> ssn:observedBy <http://example:3333/jprodriguezg> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_90>,<http://example:3333/impact_c_90>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2176> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "72" .
+<http://example:3333/obs_2177> time:day "2025-11-25";
+time:hour "23:30";
+a ssn:Observation;
+geo:long "3.435";
+geo:lat "39.702";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2177>;
+rdfs:comment "Línea de tormentas acompañadas de granizo con tamaños máximos de 3 cm aproximadamente"@es .
+<http://example:3333/jprodriguezg> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Illes Balears"@es .
+<http://example:3333/obs_2177> ssn:observedBy <http://example:3333/jprodriguezg> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_91>,<http://example:3333/impact_c_91>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2177> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "100" .
+<http://example:3333/obs_2178> a ssn:Observation;
+time:day "2025-12-12";
+time:hour "14:00";
+geo:long "-0.675";
+geo:lat "37.974";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2178>;
+rdfs:comment "Sobre las dos de la tarde y coincidiendo con la entrada de nubosidad y lluvias débiles, se vió formándose una tuba frente a la costa de Torrevieja y Orihuela. No llegó a tocar el agua."@es .
+<http://example:3333/ProyectoMastral> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Alicante"@es .
+<http://example:3333/obs_2178> ssn:observedBy <http://example:3333/ProyectoMastral> .
+<http://example:3333/prop_Tuba> a aemet:AmbientProperty .
+<http://example:3333/impact_b_92> rdfs:comment "Ninguno"@es .
+<http://example:3333/prop_Tuba> sorelsc:hasImpact <http://example:3333/impact_b_92> .
+<http://example:3333/impact_c_92> rdfs:comment "Ninguno"@es .
+<http://example:3333/prop_Tuba> sorelsc:hasImpact <http://example:3333/impact_c_92>;
+rdfs:label "Tuba"@es .
+<http://example:3333/obs_2178> ssn:observedProperty <http://example:3333/prop_Tuba>;
+geo:alt "0" .
+<http://example:3333/obs_2179> time:day "2025-10-29";
+time:hour "09:00";
+a ssn:Observation;
+geo:long "-7.326";
+geo:lat "37.199";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2179>;
+rdfs:comment "En la mañana del 29 de octubre de 2025 se formó un sistema convectivo muy activo en la costa sur de Portugal, que se fue desarrollando y desplazando al E, penetrando en la provincia de Huelva, donde dejó lluvias torrenciales y vientos muy fuertes en numerosos lugares. En superficie se observa una pequeña baja con fuerte gradiente de presión, un frente cálido y una línea de inestabilidad, situación que determinaba gran inestabilidad mecánica y térmica, que junto con la intensa cizalladura vertical es compatible con la convección organizada, y favorable a la posible formación de tornados. En las imágenes de satélite se observan grandes desarrollos convectivos, y en las de radar altas reflectividades y topes elevados, con bastante actividad eléctrica. Hacia las 9 h, en Isla Cristina se observa un aumento del viento y una intensificación de la precipitación y de las descargas eléctricas. La cercana estación meteorológica de Ayamonte muestra registros consistentes con el paso de un sistema convectivo, pero que no pueden justificar los daños observados en Isla Cristina, por lo que estos debieron estar asociados a algún fenómeno de viento convectivo de carácter local. Es probable que hacia las 9 h, un tornado con vientos en torno a los 150 Km/h produjera los daños observados en Isla Cristina."@es .
+<http://example:3333/egarciat> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Huelva"@es .
+<http://example:3333/obs_2179> ssn:observedBy <http://example:3333/egarciat> .
+<http://example:3333/prop_Tornado%20/%20Tromba%20Marina> a aemet:AmbientProperty .
+<http://example:3333/impact_b_93> rdfs:comment "Levantamiento de techado de quiosco, árboles caídos, cable eléctrico en la vía, poste de alta tensión caído, así como muros y placas solares."@es .
+<http://example:3333/prop_Tornado%20/%20Tromba%20Marina> sorelsc:hasImpact <http://example:3333/impact_b_93> .
+<http://example:3333/impact_c_93> rdfs:comment "Varios árboles caídos."@es .
+<http://example:3333/prop_Tornado%20/%20Tromba%20Marina> sorelsc:hasImpact <http://example:3333/impact_c_93>;
+rdfs:label "Tornado / Tromba Marina"@es .
+<http://example:3333/obs_2179> ssn:observedProperty <http://example:3333/prop_Tornado%20/%20Tromba%20Marina>;
+geo:alt "3" .
+<http://example:3333/obs_2180> time:hour "15:25";
+time:day "2025-12-16";
+a ssn:Observation;
+geo:long "-0.708";
+geo:lat "38.258";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2180>;
+rdfs:comment "En la tarde del 15/12/2024 existía gran inestabilidad en la atmósfera junto a una situación muy adversa, con importantes desarrollos verticales de la nubosidad. Hacia las 15:24 horas, tras el gran desarrollo vertical de una nube tormentosa, comienza a descender en forma de rotación vapor de agua y agua líquida, dando lugar a la tuba."@es .
+<http://example:3333/TiempoIlicitano> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Alicante"@es .
+<http://example:3333/obs_2180> ssn:observedBy <http://example:3333/TiempoIlicitano> .
+<http://example:3333/prop_Tuba> a aemet:AmbientProperty .
+<http://example:3333/impact_b_94> rdfs:comment "-"@es .
+<http://example:3333/prop_Tuba> sorelsc:hasImpact <http://example:3333/impact_b_94> .
+<http://example:3333/impact_c_94> rdfs:comment "-"@es .
+<http://example:3333/prop_Tuba> sorelsc:hasImpact <http://example:3333/impact_c_94>;
+rdfs:label "Tuba"@es .
+<http://example:3333/obs_2180> ssn:observedProperty <http://example:3333/prop_Tuba>;
+geo:alt "72" .
+<http://example:3333/obs_2181> time:day "2025-12-17";
+a ssn:Observation;
+time:hour "13:50";
+geo:long "-0.721";
+geo:lat "37.927";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2181>;
+rdfs:comment "Sobre las 13:53 horas se pudo divisar una manga marina desde la costa de Torrevieja y Orihuela Costa. Desde Torrevieja no se percibía el contacto con el agua, pero en el vídeo desde Orihuela Costa se ve perfectamente como llega a tocar el agua."@es .
+<http://example:3333/ProyectoMastral> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Alicante"@es .
+<http://example:3333/obs_2181> ssn:observedBy <http://example:3333/ProyectoMastral> .
+<http://example:3333/prop_Tornado%20/%20Tromba%20Marina> a aemet:AmbientProperty .
+<http://example:3333/impact_b_95> rdfs:comment "Ninguno"@es .
+<http://example:3333/prop_Tornado%20/%20Tromba%20Marina> sorelsc:hasImpact <http://example:3333/impact_b_95> .
+<http://example:3333/impact_c_95> rdfs:comment "Ninguno"@es .
+<http://example:3333/prop_Tornado%20/%20Tromba%20Marina> sorelsc:hasImpact <http://example:3333/impact_c_95>;
+rdfs:label "Tornado / Tromba Marina"@es .
+<http://example:3333/obs_2181> ssn:observedProperty <http://example:3333/prop_Tornado%20/%20Tromba%20Marina>;
+geo:alt "0" .
+<http://example:3333/obs_2182> a ssn:Observation;
+time:hour "13:50";
+time:day "2025-12-17";
+geo:long "-0.816";
+geo:lat "37.770";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2182>;
+rdfs:comment "Configuración atmosférica con un flujo muy marcado de este-noreste a oeste-suroeste, aportando humedad, dando lugar a la formación de núcleos de precipitación en alta mar que fueron penetrando a tierra con el paso de las horas. En torno a las 13:50 hora local, se observa en el radar meteorológico de Murcia reflectividades de hasta 48 dBZ frente a la costa norte del Mar Menor, pudiendo estar asociadas a la formación de la tromba o manga marina a la que se hace alusión en este reporte."@es .
+<http://example:3333/MeteOrihuela> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Murcia"@es .
+<http://example:3333/obs_2182> ssn:observedBy <http://example:3333/MeteOrihuela> .
+<http://example:3333/prop_Tornado%20/%20Tromba%20Marina> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_96>,<http://example:3333/impact_c_96>;
+rdfs:label "Tornado / Tromba Marina"@es .
+<http://example:3333/obs_2182> ssn:observedProperty <http://example:3333/prop_Tornado%20/%20Tromba%20Marina>;
+geo:alt "1" .
+<http://example:3333/obs_2183> a ssn:Observation;
+time:day "2025-11-25";
+time:hour "01:30";
+geo:long "-2.053";
+geo:lat "43.190";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2183>;
+rdfs:comment "Debido a una entrada marítimo - polar y a una temperatura del mar Cantabrico anormalmente alta, daba lugar a un contraste muy marcado y a una mayor peligrosidad de fuertes precipitaciones. Los chubascos convectivos se fueron generalizando durante toda la jornada, siendo estos más frecuentes e intensos por la noche, cuando sucedió el fenómeno. Durante la 1:00 de la mañana se forma una tormenta sobre el Cantabrico Oriental a pocos kilómetros de la costa entre Zarauz y San Sebastián que se desplaza de NW-SE, al entrar al interior sufre una explosión convectiva, dejando algunas descargas eléctricas entre Villabona y Zizurkil, el chubascos afectó a la zona durante varios minutos y se regeneró dando lugar a precipitaciones persistentes en forma de granizo. En total se acumularon 8,2 l/M2 según la estación de Euskalmet, precipitación que fue en forma de lluvia y granizo."@es .
+<http://example:3333/oierseoanerubio> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Gipuzkoa"@es .
+<http://example:3333/obs_2183> ssn:observedBy <http://example:3333/oierseoanerubio> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty .
+<http://example:3333/impact_b_97> rdfs:comment "Accidente en la A-1 dirección Irún"@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_b_97> .
+<http://example:3333/impact_c_97> rdfs:comment "Algunas ramas rotas y una crecida del río Oria como consecuencia de las fuertes precipitaciones."@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_c_97>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2183> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "55" .
+<http://example:3333/obs_2184> a ssn:Observation;
+time:day "2025-12-24";
+time:hour "15:00";
+geo:long "-4.258";
+geo:lat "36.724";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2184>;
+rdfs:comment "El fenómeno se produjo sobre la hora de comer, con una humedad muy elevada, el Rocío de la mañana nivelado con la temperatura y una pequeña dosis de energía de convecividad fue suficiente para desatar una corriente ascendente sobre las 14:30 de la tarde, identifiqué una tormenta de carácter “estático“ hasta que a las 15:00 empezó a tomar rumbo hacia el este de manera diagonal lentamente, Afectando a Vélez-Málaga a las 15:30 - 16:00, el primer núcleo muere absorbido por otra nube convectiva mar a dentro, que posteriormente afectó a Nerja, y se adentró en la costa granadina"@es .
+<http://example:3333/GDStudios> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Málaga"@es .
+<http://example:3333/obs_2184> ssn:observedBy <http://example:3333/GDStudios> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty .
+<http://example:3333/impact_b_98> rdfs:comment "puertas atascadas, por el momento no sabemos más"@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_b_98> .
+<http://example:3333/impact_c_98> rdfs:comment "se desconoce"@es .
+<http://example:3333/prop_Granizada%20Singular> sorelsc:hasImpact <http://example:3333/impact_c_98>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2184> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "70" .
+<http://example:3333/obs_2185> time:day "2025-12-28";
+a ssn:Observation;
+time:hour "17:50";
+geo:long "-1.257";
+geo:lat "37.564";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2185>;
+rdfs:comment "Minutos antes de las 17:30 h una tormenta fue ganando entidad de manera muy significativa frente a la costa de Mazarrón (Murcia), adentrándose a tierra con reflectividades de hasta 60 dBZ minutos antes de las 18:00 h, siendo una señal inequívoca de fenómenos severos. Hay personas que aseguran haber identificado hasta 6 mangas o trombas marinas de forma simultánea en la lejanía. En cambio, otras solo vieron 4. De cualquier forma, uno de esos vórtices llegó a las instalaciones portuarias del Puerto de Mazarrón, arrasando con todo lo que encontraba a su paso."@es .
+<http://example:3333/MeteOrihuela> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Murcia"@es .
+<http://example:3333/obs_2185> ssn:observedBy <http://example:3333/MeteOrihuela> .
+<http://example:3333/prop_Tornado%20/%20Tromba%20Marina> a aemet:AmbientProperty .
+<http://example:3333/impact_b_99> rdfs:comment "Daños en al menos un vehículo, decenas de embarcaciones, almacén, muro del muelle pesquero, comercios y establecimientos ubicados en el paseo marítimo, cartelería, farolas, enrejados, mástiles, casetas..."@es .
+<http://example:3333/prop_Tornado%20/%20Tromba%20Marina> sorelsc:hasImpact <http://example:3333/impact_b_99>,<http://example:3333/impact_c_99>;
+rdfs:label "Tornado / Tromba Marina"@es .
+<http://example:3333/obs_2185> ssn:observedProperty <http://example:3333/prop_Tornado%20/%20Tromba%20Marina>;
+geo:alt "2" .
+<http://example:3333/obs_2186> time:day "2025-12-29";
+time:hour "12:00";
+a ssn:Observation;
+geo:long "4.067";
+geo:lat "39.890";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2186>;
+rdfs:comment "Tromba marina sin impacto conocido en tierra"@es .
+<http://example:3333/jprodriguezg> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Illes Balears"@es .
+<http://example:3333/obs_2186> ssn:observedBy <http://example:3333/jprodriguezg> .
+<http://example:3333/prop_Tornado%20/%20Tromba%20Marina> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_100>,<http://example:3333/impact_c_100>;
+rdfs:label "Tornado / Tromba Marina"@es .
+<http://example:3333/obs_2186> ssn:observedProperty <http://example:3333/prop_Tornado%20/%20Tromba%20Marina>;
+geo:alt "0" .
+<http://example:3333/obs_2187> time:day "2025-11-13";
+a ssn:Observation;
+time:hour "15:30";
+geo:long "-7.363";
+geo:lat "37.525";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2187>;
+rdfs:comment "El 13 de noviembre de 2025, a nivel sinóptico, en niveles medios y altos tenemos una profunda vaguada al suroeste de la Península, que engloba una masa de aire frío. En superficie se sitúa la borrasca Claudia al noroeste de la Península, con un centro secundario al oeste de la costa portuguesa, con un frente estacionario sobre Portugal y una línea de inestabilidad por delante. El gradiente de presión es elevado, lo que hace prever la ocurrencia de vientos muy fuertes. Esta situación determina la existencia de inestabilidad dinámica y térmica, y una gran cizalladura vertical, compatible con la formación de células convectivas organizadas. Hacia las 15:30 h, un sistema convectivo lineal, asociado a la borrasca Claudia, entraba por el suroeste peninsular barriendo la provincia de Huelva, dejando a su paso chubascos intensos, tormentas y rachas de viento muy fuertes. En las imágenes de satélite se observa a esa hora un frente muy bien definido, con grandes desarrollos sobre el Golfo de Cádiz. Por su parte, las imágenes del radar de Sevilla muestran hacia esa hora un sistema convectivo lineal en la frontera de Huelva con Portugal, con grandes reflectividades y topes muy altos. A la hora del suceso se observa en los registros de las estaciones de AEMET una caída de la temperatura, un pico de precipitación, un giro en la dirección del viento y un máximo de racha (con 110 Km/h medidos en Ayamonte, que pudieron superarse en otros puntos). En la zona de Huerto Ramírez se producen rachas muy fuertes de viento que arrancan árboles, rompen tejados y tendidos eléctricos, etc... Es probable que se produjeran vientos lineales intensos de carácter local o pequeños tornados (1,5 escala Fujita, con vientos de unos 180 Km/h) que produjesen todos los destrozos reportados."@es .
+<http://example:3333/egarciat> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Huelva"@es .
+<http://example:3333/obs_2187> ssn:observedBy <http://example:3333/egarciat> .
+<http://example:3333/prop_Tornado%20/%20Tromba%20Marina> a aemet:AmbientProperty .
+<http://example:3333/impact_b_101> rdfs:comment "Tejado de una nave ganadera arrancado (chapas del tejado, y travesaños de hormigón), daños en el tendido eléctrico, desplazamiento de un remolque, otros destrozos en tejados."@es .
+<http://example:3333/prop_Tornado%20/%20Tromba%20Marina> sorelsc:hasImpact <http://example:3333/impact_b_101> .
+<http://example:3333/impact_c_101> rdfs:comment "Árboles arrancados."@es .
+<http://example:3333/prop_Tornado%20/%20Tromba%20Marina> sorelsc:hasImpact <http://example:3333/impact_c_101>;
+rdfs:label "Tornado / Tromba Marina"@es .
+<http://example:3333/obs_2187> ssn:observedProperty <http://example:3333/prop_Tornado%20/%20Tromba%20Marina>;
+geo:alt "181" .
+<http://example:3333/obs_2188> a ssn:Observation;
+time:day "2026-01-18";
+time:hour "14:00";
+geo:long "0.543";
+geo:lat "42.569";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2188>;
+rdfs:comment "Una persona ha muerto al quedar sepultada bajo un alud que se ha registrado en la tarde de este domingo en el barranco de Puimestre, fuera de pistas, en la estación de Cerler, en el término municipal de Benasque"@es .
+<http://example:3333/psolag> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Huesca"@es .
+<http://example:3333/obs_2188> ssn:observedBy <http://example:3333/psolag> .
+<http://example:3333/prop_Alud%20(Avalancha)> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_102>,<http://example:3333/impact_c_102>;
+rdfs:label "Alud (Avalancha)"@es .
+<http://example:3333/obs_2188> ssn:observedProperty <http://example:3333/prop_Alud%20(Avalancha)>;
+geo:alt "1954" .
+<http://example:3333/obs_2189> time:day "2025-12-29";
+a ssn:Observation;
+time:hour "13:10";
+geo:long "-0.210";
+geo:lat "42.739";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2189>;
+rdfs:comment "Tragedia en el Pirineo oscense. Tres expertos montañeros que practicaban esquí han muerto este lunes en Panticosa por un alud en la cara oeste del pico Tablato, donde una gran avalancha de nieve ha segado la vida del conocido pediatra Jorge García-Dihinx, de su mujer, Natalia Ramón, y de un irundarra de nombre Eneko Arrastua. Han sido dos compañeros de expedición, dos vecinos de Ordizia (Guipúzcoa) y de Zaragoza, quienes han rescatado los cadáveres de dos de los fallecidos además de poner a salvo a una joven de 29 años que ha sido trasladada al hospital San Jorge de Huesca con hipotermia y varios golpes. En el operativo han participado una quincena de especialistas de la Guardia Civil, quienes apoyados por dos canes han hallado el cadáver de la tercera víctima bajo la nieve a unos 2.400 metros de altitud."@es .
+<http://example:3333/psolag> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Huesca"@es .
+<http://example:3333/obs_2189> ssn:observedBy <http://example:3333/psolag> .
+<http://example:3333/prop_Alud%20(Avalancha)> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_103>,<http://example:3333/impact_c_103>;
+rdfs:label "Alud (Avalancha)"@es .
+<http://example:3333/obs_2189> ssn:observedProperty <http://example:3333/prop_Alud%20(Avalancha)>;
+geo:alt "2645" .
+<http://example:3333/obs_2190> time:day "2025-12-31";
+a ssn:Observation;
+time:hour "19:40";
+geo:long "0.283";
+geo:lat "42.668";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2190>;
+rdfs:comment "Un montañero que quedó atrapado por un alud en el valle de Bielsa ha sido hallado muerto de madrugada por los servicios de rescate. El Grupo de Rescate Especial e Intervención en Montaña (Greim) ha localizado de madrugada el cadáver de un hombre al que se dio por desaparecido a última hora del día de Nochevieja en la zona de Urdiceto, en el Valle de Bielsa, después de quedar sepultado por un alud cuando realizaba una excursión con raquetas junto a otro varón. La víctima tenía 54 años y había nacido en Madrid, aunque era vecino de Zaragoza. Su compañero, de 46 años y residente en Madrid, ha resultado ileso. De hecho fue él quien dio la voz de alarma de lo ocurrido."@es .
+<http://example:3333/psolag> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Huesca"@es .
+<http://example:3333/obs_2190> ssn:observedBy <http://example:3333/psolag> .
+<http://example:3333/prop_Alud%20(Avalancha)> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_104>,<http://example:3333/impact_c_104>;
+rdfs:label "Alud (Avalancha)"@es .
+<http://example:3333/obs_2190> ssn:observedProperty <http://example:3333/prop_Alud%20(Avalancha)>;
+geo:alt "2377" .
+<http://example:3333/obs_2191> time:day "2026-01-27";
+a ssn:Observation;
+time:hour "18:15";
+geo:long "-4.631";
+geo:lat "36.693";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2191>;
+rdfs:comment "Sucedió entre las 18:15 de la tarde en torno a Cártama, un embudo de carácter mesociclónico toma forma e intenta como generar un tornado que no llega a tocar tierra, debido al poco CAPE presente, pero la Cizalladura calculada con el sondeo del modelo de predicción ECMWF es de 22m/s de manera unidireccional, suficiente para haber formado el embudo, se ve mal porque se me ocurrió la brillante idea de irme a fotografiar otros fenómenos en Yunquera, a unos 30 km del fenómeno, solo supe los primeros 5 minutos de este"@es .
+<http://example:3333/GDStudios> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Málaga"@es .
+<http://example:3333/obs_2191> ssn:observedBy <http://example:3333/GDStudios> .
+<http://example:3333/prop_Tuba> a aemet:AmbientProperty .
+<http://example:3333/impact_b_105> rdfs:comment "Se desconoce"@es .
+<http://example:3333/prop_Tuba> sorelsc:hasImpact <http://example:3333/impact_b_105> .
+<http://example:3333/impact_c_105> rdfs:comment "Se desconoce"@es .
+<http://example:3333/prop_Tuba> sorelsc:hasImpact <http://example:3333/impact_c_105>;
+rdfs:label "Tuba"@es .
+<http://example:3333/obs_2191> ssn:observedProperty <http://example:3333/prop_Tuba>;
+geo:alt "250" .
+<http://example:3333/obs_2192> a ssn:Observation;
+time:day "2026-02-02";
+time:hour "09:00";
+geo:long "-4.757";
+geo:lat "40.295";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2192>;
+rdfs:comment "en cuestion de 2 minutos un fuerte ruedo y vientos que nunca vi en esta zona"@es .
+<http://example:3333/drequejo> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Ávila"@es .
+<http://example:3333/obs_2192> ssn:observedBy <http://example:3333/drequejo> .
+<http://example:3333/prop_Reventón%20/%20Frente%20de%20racha> a aemet:AmbientProperty .
+<http://example:3333/impact_b_106> rdfs:comment "Desplazamiento de objetos de gran tamaño tipo cubos de basura, camas elásticas, vallas destruidas o tiradas y alambradas arrancadas, muebles y barbacoas en fincas aledañas."@es .
+<http://example:3333/prop_Reventón%20/%20Frente%20de%20racha> sorelsc:hasImpact <http://example:3333/impact_b_106> .
+<http://example:3333/impact_c_106> rdfs:comment "Arboles y plantas dañados"@es .
+<http://example:3333/prop_Reventón%20/%20Frente%20de%20racha> sorelsc:hasImpact <http://example:3333/impact_c_106>;
+rdfs:label "Reventón / Frente de racha"@es .
+<http://example:3333/obs_2192> ssn:observedProperty <http://example:3333/prop_Reventón%20/%20Frente%20de%20racha>;
+geo:alt "620" .
+<http://example:3333/obs_2193> a ssn:Observation;
+time:day "2026-02-03";
+time:hour "16:25";
+geo:long "2.705";
+geo:lat "39.525";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2193>;
+rdfs:comment "Chubasco en el mar con manga marina estrecha en sus proximidades"@es .
+<http://example:3333/jprodriguezg> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Illes Balears"@es .
+<http://example:3333/obs_2193> ssn:observedBy <http://example:3333/jprodriguezg> .
+<http://example:3333/prop_Tornado%20/%20Tromba%20Marina> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_107>,<http://example:3333/impact_c_107>;
+rdfs:label "Tornado / Tromba Marina"@es .
+<http://example:3333/obs_2193> ssn:observedProperty <http://example:3333/prop_Tornado%20/%20Tromba%20Marina>;
+geo:alt "-3" .
+<http://example:3333/obs_2194> a ssn:Observation;
+time:day "2026-02-02";
+time:hour "07:45";
+geo:long "-6.187";
+geo:lat "36.374";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2194>;
+rdfs:comment "Sobre las 07:30-07:45 del lunes 2 de febrero de 2025, tras una noche de lluvias, se inició bruscamente un viento mucho mas fuerte del que había estado soplando hasta el momento acompañado de un ligero granizo inicial seguido de un fortísimo aguacero"@es .
+<http://example:3333/macucri> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Cádiz"@es .
+<http://example:3333/obs_2194> ssn:observedBy <http://example:3333/macucri> .
+<http://example:3333/prop_Reventón%20/%20Frente%20de%20racha> a aemet:AmbientProperty .
+<http://example:3333/impact_b_108> rdfs:comment "Tejas arrancadas, algún mobiliario de patios levantado del suelo y caído cerca"@es .
+<http://example:3333/prop_Reventón%20/%20Frente%20de%20racha> sorelsc:hasImpact <http://example:3333/impact_b_108> .
+<http://example:3333/impact_c_108> rdfs:comment "Pinos caídos en entorno urbano de chalets y casas bajas"@es .
+<http://example:3333/prop_Reventón%20/%20Frente%20de%20racha> sorelsc:hasImpact <http://example:3333/impact_c_108>;
+rdfs:label "Reventón / Frente de racha"@es .
+<http://example:3333/obs_2194> ssn:observedProperty <http://example:3333/prop_Reventón%20/%20Frente%20de%20racha>;
+geo:alt "8" .
+<http://example:3333/obs_2195> time:hour "09:55";
+a ssn:Observation;
+time:day "2026-02-14";
+geo:long "-3.607";
+geo:lat "39.220";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2195>;
+rdfs:comment "Tras el paso de la borrasca Oriana las isobaras se unen dando lugar a un pasillo de vientos de componente norte, con rachas de nivel de aviso naranja. La AEMET no mantiene aviso en la zona, pero las estaciones meteorológicas locales, incluida la del Ayuntamiento reportan rachas de viento superiores a los 80km/h, equivalente a un nivel de aviso naranja para la población. Este reporte es efectuado por el geógrafo y meteorólogo Kevin Bórnez."@es .
+<http://example:3333/kevinbor> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Ciudad Real"@es .
+<http://example:3333/obs_2195> ssn:observedBy <http://example:3333/kevinbor> .
+<http://example:3333/prop_Viento%20de%20Ladera> a aemet:AmbientProperty .
+<http://example:3333/impact_b_109> rdfs:comment "Se reportan a MeteoVillarrubia daños en viviendas por el levantamiento de tejados, caída de muros, mobiliario y árboles."@es .
+<http://example:3333/prop_Viento%20de%20Ladera> sorelsc:hasImpact <http://example:3333/impact_b_109>,<http://example:3333/impact_c_109>;
+rdfs:label "Viento de Ladera"@es .
+<http://example:3333/obs_2195> ssn:observedProperty <http://example:3333/prop_Viento%20de%20Ladera>;
+geo:alt "630" .
+<http://example:3333/obs_2196> a ssn:Observation;
+time:day "2026-01-21";
+time:hour "22:00";
+geo:long "-2.221";
+geo:lat "39.721";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2196>;
+rdfs:comment "El fenómeno afectó principalmente al cementerio del pueblo, pero algunos testigos comentaron el ruido atronador que oyeron durante esos minutos."@es .
+<http://example:3333/lbanonp> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Cuenca"@es .
+<http://example:3333/obs_2196> ssn:observedBy <http://example:3333/lbanonp> .
+<http://example:3333/prop_Reventón%20/%20Frente%20de%20racha> a aemet:AmbientProperty .
+<http://example:3333/impact_b_110> rdfs:comment """Caída de unas 50 estelas funerarias de mármol y de piedra por el viento. 
+En una nave volaron alguna estructura metálica."""@es .
+<http://example:3333/prop_Reventón%20/%20Frente%20de%20racha> sorelsc:hasImpact <http://example:3333/impact_b_110> .
+<http://example:3333/impact_c_110> rdfs:comment """Caída de 5 o 6 cipreses que, a su vez, rompieron varias tumbas. Tronchado de dos cipreses de unos 10 metros a la altura de unos 6 metros.
+En otras zonas se encontraron pinos tumbados y olivos jóvenes tumbados."""@es .
+<http://example:3333/prop_Reventón%20/%20Frente%20de%20racha> sorelsc:hasImpact <http://example:3333/impact_c_110>;
+rdfs:label "Reventón / Frente de racha"@es .
+<http://example:3333/obs_2196> ssn:observedProperty <http://example:3333/prop_Reventón%20/%20Frente%20de%20racha>;
+geo:alt "832" .
+<http://example:3333/obs_2197> a ssn:Observation;
+time:day "2026-02-02";
+time:hour "07:25";
+geo:long "-6.067";
+geo:lat "37.348";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2197>;
+rdfs:comment "En el borde delantero de un frente frío se formó una banda estrecha de precipitación. Esta banda se caracterizaba por un patrón de reflectividad en forma de S, con máximos y mínimos alternos, con presencia de pequeños vórtices o misociclones visibles en las imágenes de viento radial. Estos misociclones pueden producir vientos lineales intensos o incluso pequeños tornados, con afectación local. Esto explicaría los daños producidos en diversas localidades al paso de  la banda de precipitación realzada, no justificables con los registros de viento en las estaciones de AEMET. Los testimonios existentes coinciden en un episodio de muy corta duración. Entre los episodios locales destaca un tornado que afectó a una planta solar en el municipio de Sanlúcar la Mayor. El resto de episodios no puede clasificarse de forma concreta por falta de evidencias suficientes, pudiendo incluir vientos lineales muy fuertes asociados al flanco sur de los misociclones, algún reventón y algún pequeño tornado."@es .
+<http://example:3333/jdsoriano> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Sevilla"@es .
+<http://example:3333/obs_2197> ssn:observedBy <http://example:3333/jdsoriano> .
+<http://example:3333/prop_Reventón%20/%20Frente%20de%20racha> a aemet:AmbientProperty .
+<http://example:3333/impact_b_111> rdfs:comment "Antena de telefonía colapsada, casetas de obra volcadas, carteles publicitarios aplastados, caída de placas solares, muros, revestimiento de paredes, etc. Postes eléctricos caídos. Coches dañados por caída de árboles y ramas. Vuelco de un camión en SE-30 (Sevilla), Caída de muro trasero de nave en Dos Hermanas. Daños en invernaderos. Etc."@es .
+<http://example:3333/prop_Reventón%20/%20Frente%20de%20racha> sorelsc:hasImpact <http://example:3333/impact_b_111> .
+<http://example:3333/impact_c_111> rdfs:comment "Caída de árboles (algunos tronchados) y ramas, tanto en zonas urbanas como semiurbanas"@es .
+<http://example:3333/prop_Reventón%20/%20Frente%20de%20racha> sorelsc:hasImpact <http://example:3333/impact_c_111>;
+rdfs:label "Reventón / Frente de racha"@es .
+<http://example:3333/obs_2197> ssn:observedProperty <http://example:3333/prop_Reventón%20/%20Frente%20de%20racha>;
+geo:alt "68" .
+<http://example:3333/obs_2198> a ssn:Observation;
+time:day "2026-02-02";
+time:hour "07:15";
+geo:long "-6.278";
+geo:lat "37.414";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2198>;
+rdfs:comment """En el borde delantero de un frente frío se formó una banda estrecha de precipitación. Esta banda se caracterizaba por un patrón de reflectividad en forma de S, con máximos y mínimos alternos, con presencia de pequeños vórtices o misociclones visibles en las imágenes de viento radial. Estos misociclones pueden producir vientos lineales intensos o incluso pequeños tornados, con afectación local. Esto explicaría los daños producidos en diversas localidades al paso de la banda de precipitación realzada, no justificables con los registros de viento en las estaciones de AEMET. Los testimonios existentes coinciden en un episodio de muy corta duración. Entre los episodios locales estaría el tornado que se describe en este reporte.
+Testimonios de empleados que se encontraban en el edificio de oficinas de la central a varios cientos de metros de la trayectoria, hablan de un “ruido intempestivo” y de que varias ventanas del edificio se abrieron. Escucharon muchos golpes asociados a los destrozos en el exterior y, tras un tiempo que percibieron como de unos minutos, el viento amainó."""@es .
+<http://example:3333/jdsoriano> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Sevilla"@es .
+<http://example:3333/obs_2198> ssn:observedBy <http://example:3333/jdsoriano> .
+<http://example:3333/prop_Tornado%20/%20Tromba%20Marina> a aemet:AmbientProperty .
+<http://example:3333/impact_b_112> rdfs:comment "Seguidores solares colapsados, dejando un rastro de destrucción total a lo largo de la central. Daños también en un cortijo colindante: muro de ladrillos huecos de hormigón derribado, vallas tumbadas, gran chapa metálica y tapa de depósito desplazadas."@es .
+<http://example:3333/prop_Tornado%20/%20Tromba%20Marina> sorelsc:hasImpact <http://example:3333/impact_b_112> .
+<http://example:3333/impact_c_112> rdfs:comment "Encinas (al parecer centenarias) arrancadas de raíz. Un tronco tronchado y descortezado"@es .
+<http://example:3333/prop_Tornado%20/%20Tromba%20Marina> sorelsc:hasImpact <http://example:3333/impact_c_112>;
+rdfs:label "Tornado / Tromba Marina"@es .
+<http://example:3333/obs_2198> ssn:observedProperty <http://example:3333/prop_Tornado%20/%20Tromba%20Marina>;
+geo:alt "36" .
+<http://example:3333/obs_2199> time:day "2026-02-14";
+a ssn:Observation;
+time:hour "00:05";
+geo:long "-3.878";
+geo:lat "40.903";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2199>;
+rdfs:comment "Las rachas de viento registradas a 2 Km no han superado los 79 Km/h , pero alguna de la estructuras/elementos de soporte de paneles fotovoltaicos suele estar certificadas para soportar rachas huracanadas. Las chimeas afectadas que he observado han soportado oficialmente, durante mas de 40 años, rachas y vientos continúos muy superiores a los registrados. Las incidencias se produjeron bajo alerta naranja por vientos. Estos fenómenos han reproducido a distinta horas durante la última semana. Aunque parece que aumentan entra dos y cinco de la mañana (coinciden con fallos en el suministro eléctrico)"@es .
+<http://example:3333/molinos> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Madrid"@es .
+<http://example:3333/obs_2199> ssn:observedBy <http://example:3333/molinos> .
+<http://example:3333/prop_Reventón%20/%20Frente%20de%20racha> a aemet:AmbientProperty .
+<http://example:3333/impact_b_113> rdfs:comment """Ha movido una parte de un tejado de unos 400 m2 de teja de hormigón.
+han caído tejas a la calle desde una altura de mas de 15m
+
+Cerca se han roto estructuras de pacas solares en la gasolinera de cesa, estando estas certificadas para soportar rachas huracanadas.
+Han habido incidentes similares próximos (radio de 1,5 Km) arrancando parcial / totalmente chimeneas. Las rachas de viento han afectado de forma muy localizada a unos elementos sin afectar a otros similares distanciados  a unos 20 m ."""@es .
+<http://example:3333/prop_Reventón%20/%20Frente%20de%20racha> sorelsc:hasImpact <http://example:3333/impact_b_113>,<http://example:3333/impact_c_113>;
+rdfs:label "Reventón / Frente de racha"@es .
+<http://example:3333/obs_2199> ssn:observedProperty <http://example:3333/prop_Reventón%20/%20Frente%20de%20racha>;
+geo:alt "1149" .
+<http://example:3333/obs_2200> a ssn:Observation;
+time:day "2025-12-28";
+time:hour "16:00";
+geo:long "-2.052";
+geo:lat "36.814";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2200>;
+rdfs:comment """El 28 de diciembre de 2025 se dieron condiciones atmosféricas favorables para la formación de trombas marinas en el litoral almeriense, debido a un entorno de inestabilidad, cizalladura y convección organizada asociada a un Sistema Convectivo Mesoescalar.
+
+Los datos de radar, satélite, sondeos y modelos numéricos respaldan la posibilidad de un fenómeno tornádico, aunque no se detectaron firmas claras de supercélula.
+
+Las evidencias observadas y los daños reportados en Isleta del Moro son compatibles con una tromba marina que tocó tierra con intensidad estimada EF-0 (100–120 km/h), sin causar daños estructurales significativos."""@es .
+<http://example:3333/cjimenezn> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Almería"@es .
+<http://example:3333/obs_2200> ssn:observedBy <http://example:3333/cjimenezn> .
+<http://example:3333/prop_Tornado%20/%20Tromba%20Marina> a aemet:AmbientProperty .
+<http://example:3333/impact_b_114> rdfs:comment "El desplazamiento violento de mobiliario ligero no anclado (sillas y mesas)"@es .
+<http://example:3333/prop_Tornado%20/%20Tromba%20Marina> sorelsc:hasImpact <http://example:3333/impact_b_114> .
+<http://example:3333/impact_c_114> rdfs:comment "No se han reportado daños estructurales en edificaciones, arrancado de cubiertas, caída de muros o afectación significativa de arbolado maduro"@es .
+<http://example:3333/prop_Tornado%20/%20Tromba%20Marina> sorelsc:hasImpact <http://example:3333/impact_c_114>;
+rdfs:label "Tornado / Tromba Marina"@es .
+<http://example:3333/obs_2200> ssn:observedProperty <http://example:3333/prop_Tornado%20/%20Tromba%20Marina>;
+geo:alt "9" .
+<http://example:3333/obs_2201> a ssn:Observation;
+time:day "2026-03-09";
+time:hour "13:30";
+geo:long "2.891";
+geo:lat "39.813";
+owl:sameAs <https://sinobas.aemet.es/index.php?pag=detal&rep=2201>;
+rdfs:comment "Una vaguada con -26 ºC en 500 hPa y la convergencia mesoescalar de vientos favorecieron esta precipitación en forma de granizo, con evidencia por medio de vídeos y fotografías. Se trata de granizo menudo que llegó a acumular una capa de unos 3 cm aproximadamente, detectable especialmente sobre la carretera."@es .
+<http://example:3333/jprodriguezg> a foaf:Agent,aemet:Sensor;
+aemet:locatedInProvince "Illes Balears"@es .
+<http://example:3333/obs_2201> ssn:observedBy <http://example:3333/jprodriguezg> .
+<http://example:3333/prop_Granizada%20Singular> a aemet:AmbientProperty;
+sorelsc:hasImpact <http://example:3333/impact_b_115>,<http://example:3333/impact_c_115>;
+rdfs:label "Granizada Singular"@es .
+<http://example:3333/obs_2201> ssn:observedProperty <http://example:3333/prop_Granizada%20Singular>;
+geo:alt "589" .
