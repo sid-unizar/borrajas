@@ -1,4 +1,11 @@
 import argparse
+import logging
+
+from rdflib import Graph
+from rdflib.plugins.stores.sparqlstore import SPARQLStore
+
+from borrajas.backends import BACKENDS
+from borrajas.config import Config
 
 def create_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
@@ -9,10 +16,10 @@ def create_parser() -> argparse.ArgumentParser:
     Examples:
     # Calling borrajas with the LangGraph backend, SINOBAS dataset, and a single question
     borrajas-cli --backend langgraph --ttl data/sinobas-sample.ttl "How many tornadoes have occurred in the last 10 years in Cantabria?"
-    
+
     # Calling borrajas with the LangGraph backend, a SPARQL endpoint, and a list of questions
     borrajas-cli --backend langgraph --endpoint https://sparql.ionov.me/clasik -i data/sample-questions.txt
-    
+
     # Calling borrajas with a config file and a list of questions
     borrajas-cli --config config.yaml --questions data/sample-questions.txt 
     """
@@ -24,12 +31,12 @@ def create_parser() -> argparse.ArgumentParser:
     q_group.add_argument("-q", "--question", required=False,
                          help="A question to ask")
 
-    parser.add_argument("-b", "--backend", required=True,
-                        choices=["langgraph", "pydantic"],
+    parser.add_argument("-b", "--backend", required=False,
+                        choices=BACKENDS.keys(),
                         help="The backend to use")
 
-    parser.add_argument("--endpoint", required=False,
-                        help="The SPARQL endpoint to use as a knowledge graph")
+    parser.add_argument("--endpoint", required=False, action="append",
+                        help="The SPARQL endpoints to use as knowledge graphs, this parameter can be used multiple times")
     parser.add_argument("--ttl", required=False, action="append",
                         help="The Turtle file to use as a knowledge graph, this parameter can be used multiple times")
 
@@ -41,14 +48,42 @@ def create_parser() -> argparse.ArgumentParser:
 
     return parser
 
+def load_questions(filename: str) -> list[str]:
+    with open(filename, "r") as f:
+        return [line.strip() for line in f.readlines()]
+
 def main():
     parser = create_parser()
     args = parser.parse_args()
 
-    if args.question:
-        print("There is only one question: ", args.question)
-    if args.questions:
-        print("There are multiple questions: ", args.questions)
+    try:
+        config = Config.load_config(args.config, vars(args))
+    except ValueError as e:
+        logging.error(f"Invalid configuration: {e}")
+        return
+    # If we are still here, we can assume that the config is valid
+    print(config)
+
+    logging.basicConfig(level=config.log_level, format="%(levelname)s: %(message)s")
+
+    context = {
+        "graphs": [Graph().parse(ttl, format="turtle") for ttl in config.ttl] +
+                  [Graph(store=SPARQLStore(endpoint)) for endpoint in config.endpoint]
+    }
+
+    print(context)
+
+    questions = load_questions(args.questions) if args.questions else [args.question]
+
+    for question in questions:
+        logging.info(f"Question: {question}")
+        answer = BACKENDS[config.backend].run_query(question, config, context)
+        if answer.error:
+            logging.error(f"Error: {answer.error}")
+            continue
+        logging.debug(f"Trace: {answer.trace}")
+
+        print(answer.answer)
 
 if __name__ == "__main__":
     main()
