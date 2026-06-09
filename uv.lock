@@ -245,8 +245,9 @@ wheels = [
 [[package]]
 name = "borrajas"
 version = "0.1.0"
-source = { virtual = "." }
+source = { editable = "." }
 dependencies = [
+    { name = "langgraph" },
     { name = "rdflib" },
 ]
 
@@ -268,6 +269,7 @@ dev = [
 requires-dist = [
     { name = "chainlit", marker = "extra == 'ui'", specifier = ">=2.11.1" },
     { name = "langchain-ollama", marker = "extra == 'langgraph'", specifier = ">=1.1.0" },
+    { name = "langgraph", specifier = ">=1.2.1" },
     { name = "langgraph", marker = "extra == 'langgraph'", specifier = ">=1.2.1" },
     { name = "rdflib", specifier = ">=7.6.0" },
 ]
