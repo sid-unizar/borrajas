@@ -43,7 +43,7 @@ def build(config: Config):
                               + state["messages"])
         return {"messages": response}
 
-    logging.info(f"Initializing LangGraph backend with config: {config}")
+    logging.debug(f"Initializing LangGraph backend with config: {config}")
 
     tools = [
         execute_sparql
@@ -71,12 +71,12 @@ def run_query(llm_graph: CompiledStateGraph, question: str, context: dict) -> An
     try:
         # messages = llm_graph.invoke({"messages": question, **context})
         messages = None
-        for state in llm_graph.stream(
+        for i_step, state in enumerate(llm_graph.stream(
                 {"messages": question, **context},
                 stream_mode="values"
-        ):
+        )):
             messages = state
-            messages["messages"][-1].pretty_print()
+            logging.info(f"Agent step #{i_step+1}: {messages["messages"][-1]}")
     except Exception as e:
         return Answer(error=str(e))
     return Answer(answer=messages["messages"][-1].content, steps=len(messages["messages"]), trace=messages["messages"])

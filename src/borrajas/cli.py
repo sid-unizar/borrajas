@@ -47,6 +47,11 @@ def create_parser() -> argparse.ArgumentParser:
     parser.add_argument("-c", "--config", required=False,
                         help="Path to the config file")
 
+    parser.add_argument("-l", "--log-level", required=False,
+                        dest="log_level",
+                        choices=logging.getLevelNamesMapping().keys(),
+                        help="The log level to use")
+
     parser.add_argument("--version", action="version", version="%(prog)s 0.1",
                         help="Show version information and exit")
 
@@ -66,9 +71,8 @@ def main():
         print(f"Invalid configuration: {e}", file=sys.stderr)
         return
     # If we are still here, we can assume that the config is valid
-    #print(config)
-
     logging.basicConfig(level=config.log_level, format="%(levelname)s: %(message)s")
+    logging.info(f"Loaded configuration: {config}")
 
     full_name = f"{config.backend}/{config.variant}"
     agent = VARIANTS[full_name].build(config)
@@ -77,7 +81,7 @@ def main():
                   [Graph(store=SPARQLStore(endpoint)) for endpoint in config.endpoint],
     }
 
-    #print(context)
+    logging.info(f"Context: {context}")
 
     questions = load_questions(args.questions) if args.questions else [args.question]
 

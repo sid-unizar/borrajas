@@ -13,7 +13,7 @@ class Config:
     variant: str = None
     endpoint: list[str] = field(default_factory=list)
     ttl: list[str] = field(default_factory=list)
-    log_level: str = "INFO"
+    log_level: str = "WARNING"
     var_config: dict = field(default_factory=dict)
 
     @staticmethod
