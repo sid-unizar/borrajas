@@ -14,10 +14,6 @@ This notebook implements a pipeline that follows the same schema of `borrajas_fe
 
 This notebook implements a pipeline where the agentic components are reduced with respect to the two above. The KG exploration and the RAG component are not anymore left to the LLM's choice, but they are made deterministic. The agentic component remains present in the SPARQL generation and in the feedback node. 
 
-### borrajas_deterministic_no_feedback.ipynb
+### borrajas_nofeedback_deterministic_gold.ipynb
 
 This notebook is similar to `borrajas_feedback_determinstic_gold.ipynb`, with the only difference of removing the feedback loop.
-
-### borrajas_agentic_fixed_ordered.ipynb
-
-This notebook implements a pipeline where the decision of going first to the knowledge graph or to the RAG component is not left to the router agent. A fixed order can be chosen by using two differently shaped graphs, one where the KG node comes first and one where the RAG one does. The feedback node is maintaned unchanged. 
