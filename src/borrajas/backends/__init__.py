@@ -1,6 +1,7 @@
-from borrajas.backends import langgraph, pydantic
+from .langgraph import react as react_langgraph
+from .pydantic import react as pydantic_langgraph
 
-BACKENDS = {
-    'langgraph': langgraph,
-    'pydantic': pydantic
+VARIANTS = {
+    'langgraph/react': react_langgraph,
+    'pydantic/react': pydantic_langgraph
 }

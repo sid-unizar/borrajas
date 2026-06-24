@@ -1,11 +1,12 @@
 import argparse
 import logging
+import sys
 
 from rdflib import Graph
 from rdflib.plugins.stores.sparqlstore import SPARQLStore
 
-from borrajas.backends import BACKENDS
-from borrajas.config import Config
+from .backends import VARIANTS
+from .config import Config
 
 def create_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
@@ -32,8 +33,11 @@ def create_parser() -> argparse.ArgumentParser:
                          help="A question to ask")
 
     parser.add_argument("-b", "--backend", required=False,
-                        choices=BACKENDS.keys(),
+                        choices=VARIANTS.keys(),
                         help="The backend to use")
+
+    parser.add_argument("-v", "--variant", required=False,
+                        help="The variant of the prototype to use (e.g. react)")
 
     parser.add_argument("--endpoint", required=False, action="append",
                         help="The SPARQL endpoints to use as knowledge graphs, this parameter can be used multiple times")
@@ -59,25 +63,27 @@ def main():
     try:
         config = Config.load_config(args.config, vars(args))
     except ValueError as e:
-        logging.error(f"Invalid configuration: {e}")
+        print(f"Invalid configuration: {e}", file=sys.stderr)
         return
     # If we are still here, we can assume that the config is valid
-    print(config)
+    #print(config)
 
     logging.basicConfig(level=config.log_level, format="%(levelname)s: %(message)s")
 
+    full_name = f"{config.backend}/{config.variant}"
+    agent = VARIANTS[full_name].build(config)
     context = {
         "graphs": [Graph().parse(ttl, format="turtle") for ttl in config.ttl] +
-                  [Graph(store=SPARQLStore(endpoint)) for endpoint in config.endpoint]
+                  [Graph(store=SPARQLStore(endpoint)) for endpoint in config.endpoint],
     }
 
-    print(context)
+    #print(context)
 
     questions = load_questions(args.questions) if args.questions else [args.question]
 
     for question in questions:
         logging.info(f"Question: {question}")
-        answer = BACKENDS[config.backend].run_query(question, config, context)
+        answer = VARIANTS[full_name].run_query(agent, question, context)
         if answer.error:
             logging.error(f"Error: {answer.error}")
             continue
