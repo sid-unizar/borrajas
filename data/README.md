@@ -19,3 +19,7 @@ A benchmark generated using information deduced from the `emdat_climate_events.t
 
 A benchmark generated using information deduced from World Weather Attribution webpages. Each article was used as context in a textual format. The LLM was prompted to generate a question-answer pair given some natural language text. 
 
+### benchmark_expert_validated.xlsx
+
+A benchmark validated by a climatology domain expert, containing information common to WWA and EM-DAT.
+
