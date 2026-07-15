@@ -9,7 +9,7 @@ This can be used as a data source for RAG methods using RDF data as context know
 
 ### climate_events_emdat_wwa.xlsx
 
-A dataset containing the intersection between EM-DAT and WWA events. For each event described by an article in WWA, its correpsondent event row was identified in the EM-DAT database, and the information coming from both sources was merged in this dataset. It includes all the column fields from the EM-DAT database, plus a column for the WWA URL and a column for the text contained in it.
+A dataset containing the intersection between EM-DAT and WWA events. For each event described by an article in WWA, its correpsondent event row was identified in the EM-DAT database, and the information coming from both sources was merged in this dataset. It includes all the column fields from the EM-DAT database, plus a column `url` for the WWA URL and a column `context` for the text contained in it.
 
 ## Benchmarks
 
@@ -23,7 +23,9 @@ A benchmark generated using information deduced from the `emdat_climate_events.t
 
 A benchmark generated using information deduced from World Weather Attribution webpages. Each article was used as context in a textual format. The LLM was prompted to generate a question-answer pair given some natural language text. 
 
-### benchmark_expert_validated.xlsx
+### benchmark_climate.csv
 
-A benchmark validated by a climatology domain expert, containing information common to WWA and EM-DAT.
+A benchmark validated by a climatology domain expert, containing information common to WWA and EM-DAT. This is the benchmark that was used for the evaluation of the systems stored in the notebooks folder.
+
+
 
