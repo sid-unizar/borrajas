@@ -17,3 +17,11 @@ This notebook implements a pipeline where the agentic components are reduced wit
 ### borrajas_nofeedback_deterministic_gold.ipynb
 
 This notebook is similar to `borrajas_feedback_determinstic_gold.ipynb`, with the only difference of removing the feedback loop.
+
+### kg_only_deterministic.ipynb
+
+This notebook implements a question answering pipeline that uses a climate KG as its only knowledge source. The KG that the agent in the langgraph workflow is able to query is stored in the data folder of this repository (`emdat_climate_events`).
+
+### rag_only_deeterministic.ipynb
+
+This notebook implements a simple RAG question answering pipeline. The textual information coming from World Weather Attribution is stored in a vector database, and relevant information can be retrieved from it.
