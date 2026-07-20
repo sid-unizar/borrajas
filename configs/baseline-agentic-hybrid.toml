@@ -1,0 +1,25 @@
+backend = "langgraph"
+variant = "react-rag-kg"
+log_level = "INFO"
+
+ttl = [
+    "data/emdat_climate_events.ttl"
+]
+endpoints = []
+
+[params]
+model = "gpt-oss:120b-cloud"
+embedding_model = "nomic-embed-text"
+
+rag_enabled = true
+rag_create_if_missing = true
+rag_index_dir = "data/rag/chroma/wwa"
+rag_sources = [
+    {
+        format = "urllist",
+        val = "data/rag/wwa-urls.txt"
+    }
+]
+rag_k = 5
+
+max_iter = 5

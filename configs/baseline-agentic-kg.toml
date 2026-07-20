@@ -1,0 +1,14 @@
+backend = "langgraph"
+variant = "react-kg"
+log_level = "INFO"
+
+ttl = [
+    "data/emdat_climate_events.ttl"
+]
+endpoints = []
+
+[params]
+model = "gpt-oss:120b-cloud"
+temperature = 1.0
+context_len = 65536
+max_iter = 30
