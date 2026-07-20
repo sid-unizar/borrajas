@@ -8,6 +8,8 @@ from rdflib.plugins.stores.sparqlstore import SPARQLStore
 from .backends import VARIANTS
 from .config import Config
 
+from .rag import init_rag
+
 def create_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="borrajas",
@@ -79,6 +81,7 @@ def main():
     context = {
         "graphs": [Graph().parse(ttl, format="turtle") for ttl in config.ttl] +
                   [Graph(store=SPARQLStore(endpoint)) for endpoint in config.endpoint],
+        "rag": init_rag(config) if config.rag else None
     }
 
     logging.info(f"Context: {context}")

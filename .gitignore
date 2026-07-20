@@ -11,3 +11,10 @@ wheels/
 
 # Secrets
 .env
+
+# IDE settings
+.idea/
+
+# Generated data and cache
+data/rag/chroma
+.chainlit/

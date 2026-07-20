@@ -18,9 +18,9 @@ class AgentState(TypedDict):
     graphs: list
 
 @tool
-def execute_sparql(query: str, state: Annotated[dict, InjectedState]) -> dict[str, list[dict]]:
+def execute_sparql(query: str, state: Annotated[dict, InjectedState]) -> dict[str, str | list[dict]]:
     """
-    Executes a SPARQL query against an endpoint or an rdflib graph.
+    Executes a SPARQL query against an endpoint or a rdflib graph.
     :param query: SPARQL query to execute
     :param state: Dictionary containing the graph(s) and the endpoint(s)
     :return: Results of the SPARQL query or an error message
@@ -39,7 +39,7 @@ def execute_sparql(query: str, state: Annotated[dict, InjectedState]) -> dict[st
 
 def build(config: Config):
     def assistant(state: MessagesState) -> dict:
-        response = llm.invoke([config.var_config.get("system_prompt", "You are a helfpul assistant")]
+        response = llm.invoke([config.params.get("system_prompt", "You are a helfpul assistant")]
                               + state["messages"])
         return {"messages": response}
 
@@ -50,8 +50,8 @@ def build(config: Config):
     ]
 
     llm = ChatOllama(
-        model=config.var_config.get("model", "gemma4:31b-cloud"),
-        temperature=config.var_config.get("temperature", 1.0)
+        model=config.params.get("model", "gemma4:31b-cloud"),
+        temperature=config.params.get("temperature", 1.0)
     ).bind_tools(tools)
 
     builder = StateGraph(AgentState)
