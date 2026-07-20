@@ -17,4 +17,10 @@ wheels/
 
 # Generated data and cache
 data/rag/chroma
-.chainlit/
+.chainlit/.sessions/
+.chainlit/.cache/
+.chainlit/.files/
+.chainlit/uploads/
+.chainlit/database*
+.chainlit/*.db
+.chainlit/*.sqlite*
